@@ -1,0 +1,6 @@
+{
+  "name": "antistatic",
+  "description": "this is antistatic",
+  "type": "module",
+  "private": true
+}

@@ -1,0 +1,133 @@
+{
+  "name": "Eroded",
+  "order": 7,
+  "kind": "neutral",
+  "anchors": [
+    {
+      "x": 0,
+      "y": -250,
+      "weight": 0.6
+    },
+    {
+      "x": -200,
+      "y": 1,
+      "weight": 0.4
+    },
+    {
+      "x": 200,
+      "y": 1,
+      "weight": 0.4
+    },
+    {
+      "x": 0,
+      "y": 50,
+      "weight": 0.5
+    }
+  ],
+  "entrances": [
+    {
+      "x": -200,
+      "y": 0,
+      "face": true
+    },
+    {
+      "x": 200,
+      "y": 0,
+      "face": false
+    }
+  ],
+  "spawns": [
+    {
+      "x": 0,
+      "y": -300,
+      "face": true
+    }
+  ],
+  "symmetric": true,
+  "pivot": 0,
+  "elements": [
+    [-430, 80, -350, 80, {"flags": "top asymmetric", "name": "mover", "model": 1}],
+    [-225, 1, {"flags": "leftGrabbable rightGrabbable top solid blastZone"}],
+    [-220, -90, -100, -90, {"flags": "top"}],
+    [-225, 1, -225, 40, {"flags": "left solid"}],
+    [-225, 40, -160, 125, {"flags": "left solid"}],
+    [-160, 125, {"flags": "bottom solid"}]
+  ],
+  "animations": [
+    {
+      "autostart": true,
+      "repeat": true,
+      "reverse": true,
+      "duration": 420,
+      "events": [
+        {
+          "type": "linear",
+          "time": 60,
+          "duration": 300,
+          "targetName": "mover",
+          "x": 350,
+          "y": 80
+        }
+      ]
+    }
+  ],
+  "prefab": {
+    "models": [
+      {
+        "name": "IPillar",
+        "size": [8000, 2000, 8000],
+        "position": [0, -1200, 0],
+        // "rotation": { "pitch": 0, "yaw": 0.5, "roll": -0.15 },
+        "material": {
+          "file": "nacloud_shell.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "NACloud_Platform",
+        "size": [40, 8, 20],
+        "position": [-390, -82, 0],
+        "material": {
+          "file": "notcloud.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "NABottom",
+        "size": [225, 225, 225],
+        "position": [0, -20, 0],
+        "material": {
+          "file": "nacloud_bottom.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "NACloud",
+        "size": [225, 250, 225],
+        "position": [0, 0, 0],
+        "material": {
+          "file": "nacloud_stage.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Cube",
+        "size": [60, 3, 20],
+        "position": [-160, 88, 0],
+        "material": {
+          "file": "nacloud_platforms.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Cube",
+        "size": [60, 3, 20],
+        "position": [160, 88, 0],
+        "material": {
+          "file": "nacloud_platforms.mtl",
+          "name": "Material"
+        }
+      }
+    ]
+  }
+}

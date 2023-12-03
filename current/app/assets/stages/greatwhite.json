@@ -1,0 +1,110 @@
+{
+  "name": "Great White",
+  "order": 8,
+  "kind": "counterpick",
+  "anchors": [
+    {
+      "x": 0,
+      "y": 75,
+      "weight": 0.375
+    },
+    {
+      "x": -37.5,
+      "y": -3.75,
+      "weight": 0.375
+    },
+    {
+      "x": 37.5,
+      "y": -3.75,
+      "weight": 0.375
+    },
+    {
+      "x": 0,
+      "y": -225,
+      "weight": 0.6
+    }
+  ],
+  "entrances": [
+    {
+      "x": -250,
+      "y": 0,
+      "face": true
+    },
+    {
+      "x": 250,
+      "y": 0,
+      "face": false
+    }
+  ],
+  "spawns": [
+    {
+      "x": 0,
+      "y": -300,
+      "face": true
+    }
+  ],
+  "symmetric": true,
+  "pivot": 0,
+  "elements": [
+    [-70, -185, { "flags": "top" }],
+    [-210, -80, -85, -80, { "flags": "top" }],
+
+    [-310, 1, -200, 1, {"flags": "top solid leftGrabbable blastZone"}],
+    [-200, 1, -75, 20, {"flags": "top solid"}],
+    [-310, 1, -310, 40, {"flags": "left solid"}],
+    [-310, 40, -280, 60, {"flags": "left solid"}],
+    [-280, 60, -225, 75, {"flags": "bottom solid"}],
+    [-225, 75, -75, 20, {"flags": "bottom"}],
+    [-75, 20, {"flags": "top solid"}]
+  ],
+  "prefab": {
+    "models": [
+      {
+        "name": "IUVSphere",
+        "size": [900, 1500, 1500],
+        "position": [0, 0, 0],
+        "rotation": { "pitch": 0, "yaw": 0.45, "roll": 0 },
+        "material": {
+          "file": "greatwhite_shell.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "GreatWhite",
+        "size": [310, 310, 310],
+        "position": [0, 0, 0],
+        "material": {
+          "file": "greatwhite_stage.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Cube",
+        "size": [70, 3, 20],
+        "position": [0, 183, 0],
+        "material": {
+          "file": "greatwhite_plat.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Cube",
+        "size": [62.5, 3, 20],
+        "position": [-147.5, 78, 0],
+        "material": {
+          "file": "greatwhite_plat.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Cube",
+        "size": [62.5, 3, 20],
+        "position": [147.5, 78, 0],
+        "material": {
+          "file": "greatwhite_plat.mtl",
+          "name": "Material"
+        }
+      }
+    ]
+  }
+}

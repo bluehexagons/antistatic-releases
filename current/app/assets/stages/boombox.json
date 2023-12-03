@@ -1,0 +1,125 @@
+{
+  "name": "Boombox",
+  "order": 5,
+  "kind": "counterpick",
+  "blastLeft": -240.00,
+  "blastTop": 225.00,
+  "blastBottom": -123.00,
+  "blastRight": 240.00,
+  "anchors": [
+    {
+      "x": 0,
+      "y": -20,
+      "weight": 0.1
+    },
+    {
+      "x": -10,
+      "y": 1,
+      "weight": 0.1
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "weight": 0.1
+    },
+    {
+      "x": 0,
+      "y": 60,
+      "weight": 0.3
+    }
+  ],
+  "entrances": [
+    {
+      "x": 0.00,
+      "y": 7.10,
+      "face": true
+    },
+    {
+      "x": -46.59,
+      "y": 37.23,
+      "face": true
+    },
+    {
+      "x": 0.00,
+      "y": 58.52,
+      "face": false
+    },
+    {
+      "x": 47.38,
+      "y": 37.33,
+      "face": false
+    }
+  ],
+  "scaleX": 3.75,
+  "scaleY": -3.75,
+  "spawns": [
+    {
+      "x": 0.00,
+      "y": 84.225,
+      "face": true
+    }
+  ],
+  "symmetric": true,
+  "pivot": 0,
+  "elements": [
+    [-55, -43, { "flags": "bottom" }],
+    [-55, -43, -67, -32, { "flags": "left" }],
+    [-67, -32, -77.2700, -14, { "flags": "left" }],
+    [-77.2700, -14, -77.2700, 0, { "flags": "left" }],
+    [-77.2700, 0, { "flags": "top solid leftGrabbable rightGrabbable" }],
+
+    [-19.0188, 51.4264, { "flags": "top" }],
+    [-61.3896, 30.1422, -31.7215, 30.1422, { "flags": "top" }]
+  ],
+  "prefab": {
+    "models": [
+      {
+        "name": "Bowl",
+        "size": [2000, 2000, 2000],
+        "position": [0, 200, 0],
+        "rotation": { "pitch": 0, "yaw": 0, "roll": 0 },
+        "material": {
+          "file": "boombox_shell.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Boombox",
+        "size": [77.2700, 77.2700, 77.2700],
+        "scale": [3.75, 3.75, 3.75],
+        "position": [0, 0, 0],
+        "material": {
+          "file": "boombox.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Cube",
+        "size": [55.62768750000001, 3, 10],
+        "position": [-174.5833125, 111.03325, 0],
+        "material": {
+          "file": "boombox_plat.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Cube",
+        "size": [55.62768750000001, 3, 10],
+        "position": [174.5833125, 111.03325, 0],
+        "material": {
+          "file": "boombox_plat.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Cube",
+        "size": [71.3205, 3, 10],
+        "position": [0, 190.849, 0],
+        "material": {
+          "file": "boombox_plat.mtl",
+          "name": "Material"
+        }
+      }
+    ]
+  }
+}
