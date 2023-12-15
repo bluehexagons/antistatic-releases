@@ -8,8 +8,7 @@ I'm working to improve the source code to where it can be included as well.
 
 Currently, Antistatic's source code is still mostly proprietary.
 
-# Use
+See the readme.md inside of a release for instructions on playing, if needed.
 
-A full release copy of Antistatic is available in the `/current` directory.
-
-An archive of the current release and older releases are included under the `archives` directory.
+Pull requests are appreciated, and may be ported and incorporated into the proprietary codebase.
+Contributions will be noted in-game and in a contributors file.

@@ -1,0 +1,12 @@
+[[actions]]
+name = "play"
+platform = "windows"
+path = "Antistatic.exe"
+args = ["--disallow-code-generation-from-strings", "app/dist/src/launch.js"]
+sandbox = true
+
+[[prereqs]]
+name = "openal-1.1"
+
+[[prereqs]]
+name = "vcredist-2019-x64"

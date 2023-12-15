@@ -1,0 +1,233 @@
+{
+  "name": "Ruins",
+  "order": 0,
+  "kind": "neutral",
+  "initHandler": "ruins",
+  /*
+    Death Boundaries
+    (-) "Dead0N": (-224.00, 200.00)
+    (-) "Dead1N": (224.00, -108.80)
+
+    Camera Boundaries
+    (-) "CamLimit0N": (-160.00, 136.00)
+    (-) "CamLimit1N": (160.00, -47.20)
+
+    Starting Positions
+    (P0) "Player0": (0.00, 8.00)
+    (P1) "Player1": (0.00, 62.40)
+    (P2) "Player2": (-38.80, 35.20)
+    (P3) "Player3": (38.80, 35.20)
+
+    Respawn Points
+    (R0) "Rebirth0": (12.80, 80.00)
+    (R1) "Rebirth1": (-40.00, 80.00)
+    (R2) "Rebirth2": (40.00, 80.00)
+    (R3) "Rebirth3": (-12.00, 80.00)
+
+    Main Stage
+    (A): (-68.4000, 0.0000)
+    (B): (68.4000, 0.0000)
+
+    Platforms
+    (1) "Top": (-18.80, 54.40)
+    (2) "Top": (18.80, 54.40)
+    (3) "Left": (-57.60, 27.20)
+    (4) "Left": (-20.00, 27.20)
+    (5) "Right": (20.00, 27.20)
+    (6) "Right": (57.60, 27.20)
+  */
+  "blastLeft": -840,
+  "blastTop": 750,
+  "blastBottom": -408,
+  "blastRight": 840,
+  "anchors": [
+    {
+      "x": 0,
+      "y": -75,
+      "weight": 0.175
+    },
+    {
+      "x": -37.5,
+      "y": 3.75,
+      "weight": 0.175
+    },
+    {
+      "x": 37.5,
+      "y": 3.75,
+      "weight": 0.175
+    },
+    {
+      "x": 0,
+      "y": 225,
+      "weight": 0.3
+    }
+  ],
+  "entrances": [
+    {
+      "x": 0,
+      "y": 30,
+      "face": true
+    },
+    {
+      "x": 0,
+      "y": 234,
+      "face": false
+    },
+    {
+      "x": -145.5,
+      "y": 132,
+      "face": true
+    },
+    {
+      "x": 145.5,
+      "y": 132,
+      "face": false
+    }
+  ],
+  "scaleX": 1,
+  "scaleY": -1,
+  "spawns": [
+    {
+      "x": 48,
+      "y": 300,
+      "face": false
+    },
+    {
+      "x": -150,
+      "y": 300,
+      "face": true
+    },
+    {
+      "x": 150,
+      "y": 300,
+      "face": false
+    },
+    {
+      "x": -45,
+      "y": 300,
+      "face": true
+    }
+  ],
+  "symmetric": true,
+  "pivot": 0,
+  "elements": [
+    [-256.5, 0, { "flags": "top leftGrabbable rightGrabbable solid" }],
+    [-70.5, 204, { "flags": "top" }],
+    [-216, 102, -75, 102, { "flags": "top" }],
+
+    [-256.5, 0, -256.5, -25.65, {"flags": "left solid" }],
+    [-256.5, -25.65, -182.206314, -114.6102435, {"flags": "left solid"}],
+    [-182.206314, -114.6102435, 0, -151.596252, {"flags": "bottom solid"}]
+  ],
+  "prefab": {
+    "models": [
+      {
+        "name": "ICube",
+        "size": [2900, 2500, 2900],
+        "position": [0, 0, 0],
+        "material": {
+          "file": "ruins_shell.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Terrain",
+        "size": [3000, 3000, 3000],
+        "position": [0, -1000, 0],
+        "material": {
+          "file": "ruins_shell.mtl",
+          "name": "Material"
+        }
+      },
+      {
+        "name": "Terrain",
+        "size": [2000, 3000, 2000],
+        "position": [0, 0, 1500],
+        "material": {
+          "file": "ruins_shell2.mtl",
+          "name": "Material"
+        },
+        "rotation": { "pitch": 0.5, "yaw": 0.75 }
+      },
+      {
+        "name": "StageBase_Cube",
+        "size": [256.5, 256.5, 256.5],
+        "position": [-100, -100, 300],
+        "material": {
+          "file": "ruins_bg.mtl",
+          "name": "Material"
+        },
+        "rotation": { "pitch": 0.1, "yaw": 0.12, "roll": 0.22 }
+      },
+      {
+        "name": "StageBase_Cube",
+        "size": [256.5, 256.5, 256.5],
+        "position": [700, -100, 345],
+        "material": {
+          "file": "ruins_bg.mtl",
+          "name": "Material"
+        },
+        "rotation": { "pitch": 0, "yaw": 0.42, "roll": -0.18 }
+      },
+      {
+        "name": "StageBase_Cube",
+        "size": [256.5, 256.5, 256.5],
+        "position": [-450, -300, 100],
+        "material": {
+          "file": "ruins_bg.mtl",
+          "name": "Material"
+        },
+        "rotation": { "pitch": 0.9, "yaw": 0.02, "roll": -0.05 }
+      },
+      {
+        "name": "Ruins_Stage",
+        "size": [256.5, 256.5, 256.5],
+        "position": [0, 0, 0]
+      },
+      // {
+      //   "name": "thing_Plane",
+      //   "size": [256.5, 256.5, 256.5],
+      //   "position": [0, 0, 0]
+      // },
+      {
+        "name": "Cube",
+        "size": [70.5, 3, 10],
+        "position": [-145.5, 100, 0],
+        "material": {
+          "file": "ruins_plat.mtl",
+          "name": "Material",
+          "recolor": {
+            "name": "Middle",
+            "rgba": [0.55, 0.58, 0.75, 1.0]
+          }
+        }
+      },
+      {
+        "name": "Cube",
+        "size": [70.5, 3, 10],
+        "position": [145.5, 100, 0],
+        "material": {
+          "file": "ruins_plat.mtl",
+          "name": "Material",
+          "recolor": {
+            "name": "Middle",
+            "rgba": [0.55, 0.58, 0.75, 1.0]
+          }
+        }
+      },
+      {
+        "name": "Cube",
+        "size": [70.5, 3, 10],
+        "position": [0, 202, 0],
+        "material": {
+          "file": "ruins_topplat.mtl",
+          "name": "Material",
+          "recolor": {
+            "name": "Top",
+            "rgba": [0.4, 0.45, 0.65, 1.0]
+          }
+        }
+      }
+    ]
+  }
+}

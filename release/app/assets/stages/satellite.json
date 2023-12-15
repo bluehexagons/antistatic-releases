@@ -1,0 +1,60 @@
+{
+  "name": "Satellite",
+  "order": 12,
+  "anchors": [
+    {
+      "x": 0,
+      "y": 75,
+      "weight": 0.375
+    },
+    {
+      "x": -37.5,
+      "y": -3.75,
+      "weight": 0.375
+    },
+    {
+      "x": 37.5,
+      "y": -3.75,
+      "weight": 0.375
+    },
+    {
+      "x": 0,
+      "y": -225,
+      "weight": 0.6
+    }
+  ],
+  "entrances": [
+    {
+      "x": -275,
+      "y": -101,
+      "face": true
+    },
+    {
+      "x": 275,
+      "y": -101,
+      "face": false
+    }
+  ],
+  "spawns": [
+    {
+      "x": 0,
+      "y": -300,
+      "face": true
+    }
+  ],
+  "symmetric": true,
+  "pivot": 0,
+  "elements": [
+    [-315, -100, -235, -100, {"flags": "leftGrabbable solid top blastZone"}],
+    [-315, -100, -315, -85, {"flags": "left"}],
+    [-315, -85, -295, -60, {"flags": "left"}],
+    [-295, -60, -245, -60, {"flags": "bottom"}],
+    [-245, -60, -235, -85, {"flags": "right"}],
+    [-235, -100, -235, -85, {"flags": "right"}],
+    [-235, -100, -125, -100, {"flags": "top blastZone"}],
+    [-145, 1, {"flags": "leftGrabbable rightGrabbable top solid blastZone"}],
+    [-145, 1, -145, 40, {"flags": "left solid"}],
+    [-145, 40, -105, 200, {"flags": "left solid"}],
+    [-105, 200, {"flags": "bottom solid"}]
+  ]
+}

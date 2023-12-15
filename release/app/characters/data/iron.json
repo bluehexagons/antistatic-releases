@@ -1,0 +1,229 @@
+{
+  "name": "Iron",
+  "symbol": "Fe",
+  "hurtbubbles": [
+    {
+      "name": "lhand",
+      "i1": 1,
+      "i2": 2,
+      "z": 8,
+      "flip": true,
+      "prefab": {
+        "models": [
+          {
+            "name": "IronArmGem",
+            "alias": "side1"
+          },
+          {
+            "name": "IronArmMid",
+            "alias": "center"
+          },
+          {
+            "name": "IronArmGem2",
+            "alias": "side2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rfoot",
+      "i1": 0,
+      "i2": 2,
+      "z": 1.5,
+      "ik": 0,
+      "flip": true,
+      "ungrabbable": true,
+      "prefab": {
+        "models": [
+          {
+            "name": "IronLegGem",
+            "alias": "side1"
+          },
+          {
+            "name": "IronLegMid",
+            "alias": "center"
+          },
+          {
+            "name": "IronLegGem2",
+            "alias": "side2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "head",
+      "i1": 3,
+      "i2": 3,
+      "z": 0,
+      "flip": true,
+      "rotateModel": false,
+      "prefab": {
+        "models": [
+          {
+            "name": "IronHead",
+            "alias": "side1",
+            "rotation": {
+              "pitch": 180
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "body",
+      "i1": 2,
+      "i2": 2,
+      "z": 0,
+      "flip": true,
+      "rotateModel": false,
+      "prefab": {
+        "models": [
+          {
+            "name": "SiliconBody",
+            "alias": "side1",
+            "rotation": {
+              "pitch": 180
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "lfoot",
+      "i1": 4,
+      "i2": 2,
+      "z": -1.5,
+      "ik": 0,
+      "flip": true,
+      "ungrabbable": true,
+      "prefab": {
+        "models": [
+          {
+            "name": "IronLegGem",
+            "alias": "side1"
+          },
+          {
+            "name": "IronLegMid",
+            "alias": "center"
+          },
+          {
+            "name": "IronLegGem2",
+            "alias": "side2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rhand",
+      "i1": 5,
+      "i2": 2,
+      "z": -8,
+      "flip": true,
+      "invert": true,
+      "prefab": {
+        "models": [
+          {
+            "name": "IronArmGem",
+            "alias": "side1"
+          },
+          {
+            "name": "IronArmMid",
+            "alias": "center"
+          },
+          {
+            "name": "IronArmGem2",
+            "alias": "side2"
+          }
+        ]
+      }
+    }
+  ],
+  "styles": [
+    {
+      "rules": [
+        "",
+        "l = 0.55; s = 0.3",
+        "l = 0.2; s = 0.1",
+        "h += 0.5; s = 0.3; l *= 0.8",
+        "l = 0.4; s = 0.5"
+      ],
+      "bubbles": {
+          "lhand": 1,
+          "rfoot": 2,
+          "head": [0, 2, 1, 3, 4],
+          "body": 0,
+          "lfoot": 2,
+          "rhand": 1
+      }
+    },
+    {
+      "rules": [
+        "l *= 0.9",
+        "h += 0.13",
+        "darker(); h -= 0.13",
+        "h -= 0.1",
+        "h += 0.05; s *= 0.5"
+      ],
+      "bubbles": {
+        "lhand": 1,
+        "rfoot": 2,
+        "head": [0, 2, 1, 3, 4],
+        "body": 1,
+        "lfoot": 2,
+        "rhand": 1
+      }
+    }
+  ],
+  "headbubble": 2,
+  "corebubble": 3,
+  "walkSpeed": 3,
+  "walkAcceleration": 1.5,
+  "arcSpeed": 0.72,
+  "fallSpeed": 0.72,
+  "maxFallSpeed": 7,
+  "fastfallSpeed": 9,
+  "initialFallSpeed": 0.1,
+  "aerodynamics": 0.999,
+  "airResistance": 0.09,
+  "riseFriction": 0.99,
+  "fallFriction": 0.99,
+  "weight": 0.95,
+  "launchResistance": 7.5,
+  "flinchThreshold": 3,
+  "softland": 1,
+  "airAcceleration": 0.275,
+  "airSpeed": 3.7,
+  "sdi": 5,
+  "asdi": 2,
+  "stunBreak": 0.5,
+  "height": 50,
+  "width": 18,
+  "grabDirections": 4,
+  "reverseGrabRange": 50,
+  "forwardGrabRange": 60,
+  "grabStart": 10,
+  "grabHeight": 40,
+  "friction": 0.8,
+  "kbFriction": 1,
+  "kbStandFriction": 0.8,
+  "kbDecayFriction": 0.001,
+  "kbDecayScale": 0.15,
+  "slideDecay": 1.2,
+  "shieldMultiplier": 0.6,
+  "shieldMinSize": 12,
+  "shieldGrowth": 22,
+  "lightShieldGrowth": 15,
+  "shieldMobility": 14,
+  "powershieldSize": 25,
+  "shieldRegen": 1,
+  "shieldDecay": 1,
+  "shieldX": 2,
+  "shieldY": 31,
+  "shieldX2": 2,
+  "shieldY2": 29,
+  "landingAudio": "landing",
+  "heavyLandingAudio": "heavy_landing",
+  "lagCancelAudio": "landing",
+  "skeletonScale": 1,
+  "bubbleScale": 1
+}

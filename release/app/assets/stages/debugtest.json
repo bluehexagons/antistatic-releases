@@ -1,0 +1,64 @@
+{
+  "name": "Debug",
+  "order": 100,
+  "anchors": [
+    {
+      "x": 275,
+      "y": -450,
+      "weight": 0.8
+    },
+    {
+      "x": -50,
+      "y": 1,
+      "weight": 0.4
+    },
+    {
+      "x": 600,
+      "y": 1,
+      "weight": 0.4
+    },
+    {
+      "x": 275,
+      "y": 100,
+      "weight": 0.5
+    }
+  ],
+  "entrances": [
+    {
+      "x": -100,
+      "y": 0,
+      "face": true
+    },
+    {
+      "x": 650,
+      "y": 0,
+      "face": false
+    }
+  ],
+  "spawns": [
+    {
+      "x": 275,
+      "y": -300,
+      "face": true
+    }
+  ],
+  "symmetric": true,
+  "pivot": 275,
+  "elements": [
+    [-200, -200, -200, -400, {"flags": "right grounded"}],
+    [-200, -200, -80, -160, {"flags": "top blastZone"}],
+    [-80, -160, -80, -100, {"flags": "right"}],
+    [200, 1, 200, -40, {"flags": "left grounded"}],
+    [200, -40, {"flags": "top solid"}],
+    [273, -200, 273, -500, {"flags": "left solid"}],
+    [273, -500, {"flags": "top solid"}],
+    [273, -200, {"flags": "bottom solid"}],
+    [-150, 1, {"flags": "leftGrabbable rightGrabbable top solid blastZone"}],
+    [-150, 1, -150, 3, {"flags": "left solid"}],
+    [-150, 3, -140, 6, {"flags": "left solid"}],
+    [-140, 6, {"flags": "bottom solid"}],
+    [-150, 151, {"flags": "leftGrabbable rightGrabbable top solid"}],
+    [-150, 151, -110, 156, {"flags": "left solid"}],
+    [-110, 156, {"flags": "bottom solid"}]
+  ]
+}

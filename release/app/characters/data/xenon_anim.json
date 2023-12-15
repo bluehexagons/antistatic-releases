@@ -1,0 +1,8902 @@
+{
+  "airborne-cancel": {
+    "cancellable": null,
+    "noCancel": [
+      "platformdrop"
+    ],
+    "type": "passive",
+    "iasa": -4,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 2,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          16, 18, 5, 1,
+          -2, 21, 9, 1,
+          7, 27, 13, 1,
+          -14, 4, 4, 1,
+          4, 12, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          16, 18, 5, 1,
+          -2, 21, 9, 1,
+          7, 27, 13, 1,
+          -14, 4, 4, 1,
+          4, 12, 5, 1
+        ]
+      },
+      {
+        "duration": 7,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          20, 23, 5, 1,
+          -9, 19, 9, 1,
+          5, 29, 13, 1,
+          -5, 4, 4, 1,
+          4, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ],
+    "hardIK": true
+  },
+  "idle": {
+    "cancellable": [
+      "all"
+    ],
+    "cancel": "idle",
+    "handler": "walk",
+    "type": "movement",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 6,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 30,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 45,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 31, 5, 1,
+          -5, 34, 9, 1,
+          5, 50, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "recoil": {
+    "cancellable": null,
+    "type": "passive",
+    "keyframes": [
+      {
+        "duration": 8,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          5, 30, 5, 1,
+          -13, 28, 9, 1,
+          -5, 40, 13, 1,
+          -5, 4, 4, 1,
+          -3, 23, 5, 1
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          5, 30, 5, 1,
+          -13, 28, 9, 1,
+          -5, 40, 13, 1,
+          -5, 4, 4, 1,
+          -3, 23, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 31, 5, 1,
+          -5, 34, 9, 1,
+          5, 50, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "teeter": {
+    "cancellable": [
+      "all"
+    ],
+    "transition": "teeter",
+    "noCancel": [
+      "teeter",
+      "idle",
+      "walk",
+      "stride"
+    ],
+    "handler": "teeter",
+    "slid": "noTeeter",
+    "type": "movement",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 6,
+        "hurtbubbles": [
+          0, 4, 4, 1,
+          14, 26, 5, 1,
+          -1, 32, 9, 1,
+          11, 41, 13, 1,
+          -6, 4, 4, 1,
+          3, 24, 5, 1
+        ]
+      },
+      {
+        "duration": 40,
+        "hurtbubbles": [
+          0, 4, 4, 1,
+          14, 26, 5, 1,
+          -1, 32, 9, 1,
+          11, 41, 13, 1,
+          -6, 4, 4, 1,
+          3, 24, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          0, 4, 4, 1,
+          7, 25, 5, 1,
+          -7, 33, 9, 1,
+          1, 41, 13, 1,
+          -7, 4, 4, 1,
+          0, 24, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          0, 4, 4, 1,
+          14, 22, 5, 1,
+          4, 31, 9, 1,
+          13, 38, 13, 1,
+          -7, 4, 4, 1,
+          9, 23, 5, 1
+        ]
+      }
+    ]
+  },
+  "dtaunt": {
+    "cancellable": null,
+    "transition": "trip",
+    "slid": "cancel",
+    "type": "passive",
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          18, 24, 5, 1,
+          0, 21, 9, 1,
+          6, 35, 13, 1,
+          -2, 4, 4, 1,
+          6, 16, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          18, 24, 5, 1,
+          0, 21, 9, 1,
+          6, 35, 13, 1,
+          -2, 4, 4, 1,
+          6, 16, 5, 1
+        ]
+      }
+    ]
+  },
+  "staunt": {
+    "cancellable": null,
+    "slid": "cancel",
+    "type": "passive",
+    "keyframes": [
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          5, 4, 8, 1,
+          10, 20, 9, 1,
+          0, 15, 4, 1,
+          2, 30, 22, 1,
+          -2, 4, 35, 1,
+          5, 20, 2, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          5, 4, 8, 1,
+          10, 20, 9, 1,
+          0, 15, 4, 1,
+          2, 30, 22, 1,
+          -2, 4, 35, 1,
+          5, 20, 2, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          -15, 4, 2, 1,
+          -5, 45, 20, 1,
+          0, 15, 3, 1,
+          0, 35, 8, 1,
+          15, 4, 30, 1,
+          35, 18, 12, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          5, 4, 25, 1,
+          10, 20, 13, 1,
+          0, 15, 4, 1,
+          2, 30, 22, 1,
+          -2, 4, 1, 1,
+          5, 20, 22, 1
+        ]
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "utaunt": {
+    "cancellable": null,
+    "slid": "cancel",
+    "type": "passive",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -2, 4, 4, 1,
+          -13, 29, 5, 1,
+          13, 35, 9, 1,
+          0, 45, 13, 1,
+          24, 50, 4, 1,
+          1, 26, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -2, 4, 4, 1,
+          -13, 29, 5, 1,
+          13, 35, 9, 1,
+          0, 45, 13, 1,
+          24, 50, 4, 1,
+          1, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -2, 4, 4, 1,
+          1, 28, 5, 1,
+          17, 52, 9, 1,
+          0, 45, 13, 1,
+          2, 65, 4, 1,
+          16, 37, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -2, 4, 4, 1,
+          6, 33, 5, 1,
+          1, 70, 9, 1,
+          0, 45, 13, 1,
+          -22, 68, 4, 1,
+          13, 50, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -2, 4, 4, 1,
+          11, 51, 5, 1,
+          -13, 62, 9, 1,
+          0, 45, 13, 1,
+          -33, 44, 4, 1,
+          8, 67, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -2, 4, 4, 1,
+          5, 61, 5, 1,
+          -18, 37, 9, 1,
+          0, 45, 13, 1,
+          6, 17, 4, 1,
+          -15, 56, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -6, 4, 4, 1,
+          -17, 48, 5, 1,
+          -15, 20, 9, 1,
+          0, 45, 13, 1,
+          -6, 11, 4, 1,
+          -12, 32, 5, 1
+        ]
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "respawn": {
+    "cancellable": null,
+    "type": "passive",
+    "gravity": 0,
+    "start": "respawn",
+    "nodi": true,
+    "noFastfall": true,
+    "transition": "waiting",
+    "interrupted": "respawn",
+    "itan": true,
+    "keyframes": [
+      {
+        "duration": 90,
+        "hurtbubbles": [
+          0, 0, 0, 1,
+          0, 0, 0, 1,
+          0, 0, 0, 1,
+          0, 0, 0, 1,
+          0, 0, 0, 1,
+          0, 0, 0, 1
+        ]
+      },
+      {
+        "duration": 60,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "waiting": {
+    "cancellable": [
+      "all"
+    ],
+    "type": "passive",
+    "gravity": 0,
+    "nodi": true,
+    "noFastfall": true,
+    "start": "respawn",
+    "handler": "respawn",
+    "end": "respawn",
+    "interrupted": "respawn",
+    "itan": true,
+    "keyframes": [
+      {
+        "duration": 60,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 60,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 180,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "bounced": {
+    "cancellable": null,
+    "cancel": "weakstumble",
+    "starKO": true,
+    "nodi": true,
+    "noFastfall": true,
+    "type": "passive",
+    "handler": "stunned",
+    "transition": "stunned",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          9, 42, 5, 1,
+          -5, 37, 9, 1,
+          6, 35, 13, 1,
+          -2, 4, 4, 1,
+          7, 22, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          9, 42, 5, 1,
+          -5, 37, 9, 1,
+          6, 35, 13, 1,
+          -2, 4, 4, 1,
+          7, 22, 5, 1
+        ]
+      }
+    ]
+  },
+  "weakairhit": {
+    "cancellable": null,
+    "starKO": true,
+    "nodi": true,
+    "noFastfall": true,
+    "type": "passive",
+    "handler": "weakstunned",
+    "transition": "weakstunned",
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          13, -10, 4, 1,
+          11, 18, 5, 1,
+          -6, 16, 9, 1,
+          2, 29, 13, 1,
+          -5, -9, 4, 1,
+          5, 8, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          13, -10, 4, 1,
+          11, 18, 5, 1,
+          -6, 16, 9, 1,
+          2, 29, 13, 1,
+          -5, -9, 4, 1,
+          5, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          13, -10, 4, 1,
+          11, 18, 5, 1,
+          -6, 16, 9, 1,
+          2, 29, 13, 1,
+          -5, -9, 4, 1,
+          5, 8, 5, 1
+        ]
+      }
+    ]
+  },
+  "airhit": {
+    "cancellable": null,
+    "cancel": "fall",
+    "starKO": true,
+    "nodi": true,
+    "techable": true,
+    "noFastfall": true,
+    "type": "passive",
+    "handler": "stunned",
+    "transition": "stunned",
+    "bufferable": [
+      "airjump"
+    ],
+    "buffertime": 20,
+    "keyframes": [
+      {
+        "duration": 2,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 6, 4, 1,
+          2, 29, 5, 1,
+          -10, 33, 9, 1,
+          -18, 34, 13, 1,
+          -2, 0, 4, 1,
+          -12, 13, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          10, 6, 4, 1,
+          2, 29, 5, 1,
+          -10, 33, 9, 1,
+          -18, 34, 13, 1,
+          -2, 0, 4, 1,
+          -12, 13, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          10, 6, 4, 1,
+          2, 29, 5, 1,
+          -9, 34, 9, 1,
+          -13, 34, 13, 1,
+          -2, 0, 4, 1,
+          -12, 13, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          10, 6, 4, 1,
+          2, 29, 5, 1,
+          -9, 34, 9, 1,
+          -9, 33, 13, 1,
+          -2, 0, 4, 1,
+          -12, 13, 5, 1
+        ]
+      }
+    ]
+  },
+  "jugglehit": {
+    "cancellable": null,
+    "cancel": "fall",
+    "starKO": true,
+    "nodi": true,
+    "techable": true,
+    "noFastfall": true,
+    "type": "passive",
+    "handler": "stunned",
+    "transition": "jugglestunned",
+    "bufferable": [
+      "airjump"
+    ],
+    "buffertime": 20,
+    "keyframes": [
+      {
+        "duration": 2,
+        "interpolate": true,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          6, 35, 5, 1,
+          -5, 34, 9, 1,
+          0, 49, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          6, 35, 5, 1,
+          -5, 34, 9, 1,
+          0, 49, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          15, 32, 5, 1,
+          -3, 32, 9, 1,
+          6, 40, 13, 1,
+          -2, 4, 4, 1,
+          5, 23, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          15, 32, 5, 1,
+          -3, 32, 9, 1,
+          6, 40, 13, 1,
+          -2, 4, 4, 1,
+          5, 23, 5, 1
+        ]
+      }
+    ]
+  },
+  "meteorhit": {
+    "cancellable": null,
+    "cancel": "fall",
+    "starKO": true,
+    "nodi": true,
+    "techable": true,
+    "noFastfall": true,
+    "type": "passive",
+    "handler": "meteor",
+    "canceled": "meteor",
+    "transition": "meteor",
+    "bufferable": [
+      "airjump"
+    ],
+    "buffertime": 20,
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          6, -4, 4, 1,
+          11, 26, 5, 1,
+          -10, 26, 9, 1,
+          0, 38, 13, 1,
+          -1, -6, 4, 1,
+          2, 13, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          6, -4, 4, 1,
+          11, 26, 5, 1,
+          -10, 26, 9, 1,
+          0, 38, 13, 1,
+          -1, -6, 4, 1,
+          2, 13, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, -4, 4, 1,
+          11, 26, 5, 1,
+          -10, 26, 9, 1,
+          0, 38, 13, 1,
+          -1, -6, 4, 1,
+          2, 13, 5, 1
+        ]
+      }
+    ]
+  },
+  "weakhit": {
+    "cancellable": null,
+    "type": "passive",
+    "slid": "tumble",
+    "handler": "weakstumble",
+    "transition": "weakstumble",
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          6, 38, 5, 1,
+          -6, 35, 9, 1,
+          4, 46, 13, 1,
+          -2, 4, 4, 1,
+          4, 24, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 17,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          6, 38, 5, 1,
+          -6, 35, 9, 1,
+          4, 46, 13, 1,
+          -2, 4, 4, 1,
+          4, 24, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          6, 38, 5, 1,
+          -6, 35, 9, 1,
+          4, 46, 13, 1,
+          -2, 4, 4, 1,
+          4, 24, 5, 1
+        ]
+      }
+    ]
+  },
+  "hit": {
+    "cancellable": null,
+    "type": "passive",
+    "slid": "stumble",
+    "handler": "stumble",
+    "transition": "stumble",
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 17,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 22, 5, 1,
+          0, 21, 9, 1,
+          6, 40, 13, 1,
+          -2, 4, 4, 1,
+          5, 38, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 20, 5, 1,
+          0, 21, 9, 1,
+          2, 40, 13, 1,
+          -2, 4, 4, 1,
+          5, 40, 5, 1
+        ]
+      }
+    ]
+  },
+  "weakstunned": {
+    "cancellable": null,
+    "starKO": true,
+    "noFastfall": true,
+    "type": "passive",
+    "handler": "weakstunned",
+    "nodi": true,
+    "transition": "weakstunned",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          13, 34, 5, 1,
+          -2, 31, 9, 1,
+          4, 42, 13, 1,
+          -2, 4, 4, 1,
+          9, 24, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          13, 34, 5, 1,
+          -2, 31, 9, 1,
+          4, 42, 13, 1,
+          -2, 4, 4, 1,
+          9, 24, 5, 1
+        ]
+      }
+    ]
+  },
+  "stunned": {
+    "cancellable": null,
+    "cancel": "fall",
+    "starKO": true,
+    "techable": true,
+    "noFastfall": true,
+    "type": "passive",
+    "handler": "stunned",
+    "nodi": true,
+    "transition": "stunned",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          10, 6, 4, 1,
+          6, 33, 5, 1,
+          -16, 22, 9, 1,
+          -16, 41, 13, 1,
+          1, -1, 4, 1,
+          -1, 25, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          10, 6, 4, 1,
+          6, 33, 5, 1,
+          -16, 22, 9, 1,
+          -16, 41, 13, 1,
+          1, -1, 4, 1,
+          -1, 25, 5, 1
+        ]
+      }
+    ]
+  },
+  "jugglestunned": {
+    "cancellable": null,
+    "cancel": "fall",
+    "starKO": true,
+    "techable": true,
+    "noFastfall": true,
+    "type": "passive",
+    "handler": "stunned",
+    "nodi": true,
+    "transition": "jugglestunned",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 36, 5, 1,
+          -7, 32, 9, 1,
+          4, 43, 13, 1,
+          -2, 4, 4, 1,
+          3, 28, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 36, 5, 1,
+          -7, 32, 9, 1,
+          4, 43, 13, 1,
+          -2, 4, 4, 1,
+          3, 28, 5, 1
+        ]
+      }
+    ]
+  },
+  "meteor": {
+    "cancellable": [
+      "airupspecial",
+      "airjump"
+    ],
+    "cancel": "fall",
+    "starKO": true,
+    "techable": true,
+    "noFastfall": true,
+    "type": "passive",
+    "handler": "meteor",
+    "canceled": "meteor",
+    "nodi": true,
+    "transition": "meteor",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          13, 38, 5, 1,
+          -7, 40, 9, 1,
+          6, 40, 13, 1,
+          -2, 4, 4, 1,
+          5, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          13, 38, 5, 1,
+          -7, 40, 9, 1,
+          6, 40, 13, 1,
+          -2, 4, 4, 1,
+          5, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "weakstumble": {
+    "cancellable": null,
+    "type": "passive",
+    "slid": "weakstunned",
+    "handler": "weakstumble",
+    "transition": "weakstumble",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          13, 34, 5, 1,
+          -2, 31, 9, 1,
+          4, 42, 13, 1,
+          -2, 4, 4, 1,
+          9, 24, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          13, 34, 5, 1,
+          -2, 31, 9, 1,
+          4, 42, 13, 1,
+          -2, 4, 4, 1,
+          9, 24, 5, 1
+        ]
+      }
+    ]
+  },
+  "stumble": {
+    "cancellable": null,
+    "type": "passive",
+    "slid": "stunned",
+    "handler": "stumble",
+    "transition": "stumble",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          14, 31, 5, 1,
+          -5, 34, 9, 1,
+          6, 40, 13, 1,
+          -2, 4, 4, 1,
+          6, 25, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          14, 31, 5, 1,
+          -5, 34, 9, 1,
+          6, 40, 13, 1,
+          -2, 4, 4, 1,
+          6, 25, 5, 1
+        ]
+      }
+    ]
+  },
+  "tumble": {
+    "cancel": "fall",
+    "cancellable": [
+      "all"
+    ],
+    "noCancel": [
+      "airdodge"
+    ],
+    "noFastfall": true,
+    "handler": "tumble",
+    "transition": "tumble",
+    "techable": true,
+    "type": "passive",
+    "grabDirections": 68,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 10,
+        "hurtbubbles": [
+          -5, -10, 4, 1,
+          6, 19, 5, 1,
+          -5, 16, 9, 1,
+          2, 29, 13, 1,
+          6, -9, 4, 1,
+          1, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -5, -10, 4, 1,
+          6, 19, 5, 1,
+          -5, 16, 9, 1,
+          2, 29, 13, 1,
+          6, -9, 4, 1,
+          1, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -3, -10, 4, 1,
+          9, 10, 5, 1,
+          -3, 19, 9, 1,
+          9, 25, 13, 1,
+          0, -1, 4, 1,
+          -7, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          9, -8, 4, 1,
+          9, 10, 5, 1,
+          -9, 12, 9, 1,
+          -2, 24, 13, 1,
+          5, -5, 4, 1,
+          -5, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "crouch": {
+    "cancellable": [
+      "all"
+    ],
+    "noCancel": [
+      "walk",
+      "walkpivot",
+      "stride"
+    ],
+    "type": "movement",
+    "handler": "crouch",
+    "transition": "crouched",
+    "kbFriction": 0.9,
+    "keyframes": [
+      {
+        "duration": 2,
+        "interpolate": true,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          10, 13, 5, 1,
+          -1, 12, 9, 1,
+          4, 24, 13, 1,
+          -6, 4, 4, 1,
+          5, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          10, 13, 5, 1,
+          -1, 12, 9, 1,
+          4, 24, 13, 1,
+          -6, 4, 4, 1,
+          5, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          8, 12, 5, 1,
+          1, 11, 9, 1,
+          6, 22, 13, 1,
+          -6, 4, 4, 1,
+          5, 8, 5, 1
+        ]
+      }
+    ]
+  },
+  "platformdrop": {
+    "cancellable": [
+      "dtap",
+      "dtilt",
+      "downspecial"
+    ],
+    "type": "passive",
+    "platformDroppable": true,
+    "transition": "airborne",
+    "speed": 0,
+    "end": "platformdrop",
+    "keyframes": [
+      {
+        "duration": 4,
+        "interpolate": true,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 25, 13, 1,
+          -2, 4, 4, 1,
+          3, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 25, 13, 1,
+          -2, 4, 4, 1,
+          3, 8, 5, 1
+        ]
+      }
+    ]
+  },
+  "crouched": {
+    "cancellable": [
+      "all"
+    ],
+    "noCancel": [
+      "walk",
+      "stride"
+    ],
+    "type": "movement",
+    "handler": "crouch",
+    "transition": "crouched",
+    "kbFriction": 0.9,
+    "keyframes": [
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 12, 9, 1,
+          7, 25, 13, 1,
+          -6, 4, 4, 1,
+          5, 10, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 12, 9, 1,
+          7, 25, 13, 1,
+          -6, 4, 4, 1,
+          5, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          9, 13, 5, 1,
+          1, 12, 9, 1,
+          7, 24, 13, 1,
+          -6, 4, 4, 1,
+          5, 9, 5, 1
+        ]
+      }
+    ]
+  },
+  "stand": {
+    "cancellable": [
+      "all"
+    ],
+    "noCancel": [
+      "walk",
+      "walkpivot",
+      "stride"
+    ],
+    "transition": "idle",
+    "type": "movement",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 12, 9, 1,
+          3, 24, 13, 1,
+          -6, 4, 4, 1,
+          5, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "reset": {
+    "cancellable": null,
+    "transition": "idle",
+    "type": "movement",
+    "ungrabbable": true,
+    "keyframes": [
+      {
+        "duration": 30,
+        "interpolate": true,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 12, 9, 1,
+          3, 24, 13, 1,
+          -6, 4, 4, 1,
+          5, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "trip": {
+    "cancellable": null,
+    "type": "passive",
+    "start": "stop",
+    "slideFriction": 0.95,
+    "transition": "fallen",
+    "keyframes": [
+      {
+        "duration": 30,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          19, 11, 5, 1,
+          4, 19, 9, 1,
+          17, 35, 13, 1,
+          -2, 4, 4, 1,
+          6, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 10, 9, 1,
+          6, 15, 13, 1,
+          -2, 4, 4, 1,
+          3, 6, 5, 1
+        ]
+      }
+    ]
+  },
+  "fall": {
+    "cancellable": null,
+    "type": "passive",
+    "slid": "tumble",
+    "ungrabbable": true,
+    "transition": "fallen",
+    "handler": "fall",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 8,
+        "effect": "hop",
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          25, 13, 5, 1,
+          0, 10, 9, 1,
+          6, 15, 13, 1,
+          -14, 4, 4, 1,
+          13, 5, 5, 1
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          12, 9, 4, 1,
+          20, 18, 5, 1,
+          -2, 16, 9, 1,
+          7, 26, 13, 1,
+          -10, 10, 4, 1,
+          7, 15, 5, 1
+        ]
+      },
+      {
+        "duration": 7,
+        "hurtbubbles": [
+          12, 9, 4, 1,
+          20, 15, 5, 1,
+          0, 15, 9, 1,
+          6, 20, 13, 1,
+          -10, 14, 4, 1,
+          5, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "effect": "hop",
+        "audio": "landing",
+        "hurtbubbles": [
+          21, 4, 4, 1,
+          15, 8, 5, 1,
+          -5, 7, 9, 1,
+          6, 14, 13, 1,
+          -14, 4, 4, 1,
+          6, 5, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          21, 4, 4, 1,
+          15, 8, 5, 1,
+          -5, 7, 9, 1,
+          6, 14, 13, 1,
+          -14, 4, 4, 1,
+          6, 5, 5, 1
+        ]
+      }
+    ]
+  },
+  "fallen": {
+    "cancellable": [
+      "getup",
+      "floorback",
+      "floorforth",
+      "floorattack"
+    ],
+    "type": "passive",
+    "slid": "tumble",
+    "ungrabbable": true,
+    "transition": "fallen",
+    "handler": "fallen",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 10,
+        "hurtbubbles": [
+          21, 4, 4, 1,
+          15, 8, 5, 1,
+          -5, 7, 9, 1,
+          6, 14, 13, 1,
+          -14, 4, 4, 1,
+          6, 5, 5, 1
+        ]
+      },
+      {
+        "duration": 30,
+        "hurtbubbles": [
+          21, 4, 4, 1,
+          15, 8, 5, 1,
+          -5, 7, 9, 1,
+          6, 14, 13, 1,
+          -14, 4, 4, 1,
+          6, 5, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          21, 4, 4, 1,
+          15, 8, 5, 1,
+          -5, 7, 9, 1,
+          6, 14, 13, 1,
+          -14, 4, 4, 1,
+          6, 5, 5, 1
+        ]
+      }
+    ]
+  },
+  "getup": {
+    "cancellable": null,
+    "ungrabbable": true,
+    "type": "passive",
+    "itanEnd": 23,
+    "keyframes": [
+      {
+        "duration": 23,
+        "interpolate": true,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 17, 9, 1,
+          6, 25, 13, 1,
+          -2, 4, 4, 1,
+          7, 5, 5, 1
+        ]
+      },
+      {
+        "duration": 7,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 17, 9, 1,
+          6, 25, 13, 1,
+          -2, 4, 4, 1,
+          7, 5, 5, 1
+        ]
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "floorattack": {
+    "cancellable": null,
+    "ungrabbable": true,
+    "type": "attack",
+    "itanEnd": 23,
+    "keyframes": [
+      {
+        "duration": 9,
+        "interpolate": true,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          -10, 20, 5, 1,
+          0, 10, 9, 1,
+          -2, 15, 13, 1,
+          2, 4, 4, 1,
+          -8, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 7,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          -10, 20, 5, 1,
+          0, 10, 9, 1,
+          -2, 15, 13, 1,
+          2, 4, 4, 1,
+          -8, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          -41, 20, 4, 1,
+          -13, 27, 5, 1,
+          0, 15, 9, 1,
+          -2, 30, 13, 1,
+          2, 4, 4, 1,
+          -7, 16, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "x": -30,
+            "y": 20,
+            "radius": 23,
+            "damage": 7.5,
+            "knockback": 9,
+            "growth": 7,
+            "sakurai": true
+          }
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -41, 20, 4, 1,
+          -13, 27, 5, 1,
+          0, 15, 9, 1,
+          -2, 30, 13, 1,
+          2, 4, 4, 1,
+          -7, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          46, 24, 4, 1,
+          16, 22, 5, 1,
+          -8, 18, 9, 1,
+          2, 30, 13, 1,
+          -2, 4, 4, 1,
+          6, 15, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "x": 30,
+            "y": 20,
+            "radius": 23,
+            "damage": 7,
+            "knockback": 8,
+            "growth": 7,
+            "sakurai": true
+          }
+        ]
+      },
+      {
+        "duration": 23,
+        "hurtbubbles": [
+          46, 24, 4, 1,
+          16, 22, 5, 1,
+          -8, 18, 9, 1,
+          2, 30, 13, 1,
+          -2, 4, 4, 1,
+          6, 15, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "tech": {
+    "cancellable": null,
+    "type": "passive",
+    "ungrabbable": true,
+    "itanEnd": 20,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 8,
+        "audio": "tech",
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 25, 13, 1,
+          -2, 4, 4, 1,
+          5, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 25, 13, 1,
+          -2, 4, 4, 1,
+          5, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 25, 13, 1,
+          -2, 4, 4, 1,
+          5, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "walltech": {
+    "cancellable": null,
+    "gravity": 0,
+    "type": "passive",
+    "ungrabbable": true,
+    "itanEnd": 25,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 8,
+        "audio": "tech",
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 25, 13, 1,
+          -2, 4, 4, 1,
+          5, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 25, 13, 1,
+          -2, 4, 4, 1,
+          5, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 25, 13, 1,
+          -2, 4, 4, 1,
+          5, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "rooftech": {
+    "cancellable": null,
+    "gravity": 0,
+    "type": "passive",
+    "ungrabbable": true,
+    "itanEnd": 25,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 8,
+        "audio": "tech",
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          10, 13, 5, 1,
+          -10, 13, 9, 1,
+          -2, 23, 13, 1,
+          3, 2, 4, 1,
+          5, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 9,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          10, 13, 5, 1,
+          -10, 13, 9, 1,
+          -2, 23, 13, 1,
+          3, 2, 4, 1,
+          5, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 9,
+        "hurtbubbles": [
+          5, 1, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 25, 13, 1,
+          -1, 0, 4, 1,
+          5, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "techforth": {
+    "cancellable": null,
+    "type": "passive",
+    "friction": 0.96,
+    "ungrabbable": true,
+    "slid": "stop",
+    "itanEnd": 20,
+    "keyframes": [
+      {
+        "duration": 8,
+        "audio": "tech",
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          16, 11, 5, 1,
+          4, 27, 9, 1,
+          14, 23, 13, 1,
+          -2, 4, 4, 1,
+          7, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "speed": 7,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          16, 11, 5, 1,
+          4, 27, 9, 1,
+          14, 23, 13, 1,
+          -2, 4, 4, 1,
+          7, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "friction": 0.9,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          16, 15, 5, 1,
+          -1, 21, 9, 1,
+          10, 27, 13, 1,
+          -2, 4, 4, 1,
+          7, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "techback": {
+    "cancellable": null,
+    "type": "passive",
+    "friction": 0.96,
+    "ungrabbable": true,
+    "slid": "stop",
+    "itanEnd": 20,
+    "keyframes": [
+      {
+        "duration": 8,
+        "audio": "tech",
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          5, 24, 5, 1,
+          -10, 16, 9, 1,
+          -8, 28, 13, 1,
+          -2, 4, 4, 1,
+          0, 13, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "speed": -7,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          5, 24, 5, 1,
+          -10, 16, 9, 1,
+          -8, 28, 13, 1,
+          -2, 4, 4, 1,
+          0, 13, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "friction": 0.86,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          12, 21, 5, 1,
+          -5, 18, 9, 1,
+          2, 28, 13, 1,
+          -2, 4, 4, 1,
+          1, 12, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "airborne": {
+    "cancellable": [
+      "all"
+    ],
+    "cancel": "airborne-cancel",
+    "type": "movement",
+    "platformDroppable": true,
+    "grabDirections": 68,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 5,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "airborne-slid": {
+    "cancellable": [
+      "all"
+    ],
+    "cancel": "airborne-cancel",
+    "type": "movement",
+    "platformDroppable": true,
+    "grabDirections": 68,
+    "keyframes": [
+      {
+        "duration": 7,
+        "hurtbubbles": [
+          13, -10, 4, 1,
+          7, 25, 5, 1,
+          -10, 18, 9, 1,
+          2, 29, 13, 1,
+          -5, -9, 4, 1,
+          4, 13, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          13, -10, 4, 1,
+          7, 25, 5, 1,
+          -10, 18, 9, 1,
+          2, 29, 13, 1,
+          -5, -9, 4, 1,
+          4, 13, 5, 1
+        ]
+      }
+    ]
+  },
+  "helpless": {
+    "cancellable": null,
+    "transition": "helpless",
+    "type": "passive",
+    "helpless": true,
+    "platformDroppable": true,
+    "grabDirections": 68,
+    "handler": "helpless",
+    "keyframes": [
+      {
+        "duration": 24,
+        "interpolate": true,
+        "hurtbubbles": [
+          -10, 15, 4, 1,
+          20, -4, 5, 1,
+          14, -15, 9, 1,
+          -1, -3, 13, 1,
+          -11, 6, 4, 1,
+          6, -8, 5, 1
+        ]
+      },
+      {
+        "duration": 40,
+        "hurtbubbles": [
+          -10, 15, 4, 1,
+          20, -4, 5, 1,
+          14, -15, 9, 1,
+          -1, -3, 13, 1,
+          -11, 6, 4, 1,
+          6, -8, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -10, 15, 4, 1,
+          20, -4, 5, 1,
+          14, -15, 9, 1,
+          -1, -3, 13, 1,
+          -11, 6, 4, 1,
+          6, -8, 5, 1
+        ]
+      }
+    ]
+  },
+  "ledgegrab": {
+    "cancellable": null,
+    "transition": "ledgehang",
+    "disableIK": true,
+    "type": "passive",
+    "xOffset": -13,
+    "yOffset": 40,
+    "pause": 8,
+    "ungrabbable": true,
+    "start": "ledgegrab",
+    "interrupted": "ledgehit",
+    "keyframes": [
+      {
+        "duration": 7,
+        "handler": "ledgegrab",
+        "interpolate": true,
+        "hurtbubbles": [
+          -26, -54, 4, 1,
+          -10, -33, 5, 1,
+          -22, -21, 9, 1,
+          -19, -18, 13, 1,
+          -3, -5, 4, 1,
+          -21, -33, 5, 1
+        ],
+        "tween": "expoOut"
+      },
+      {
+        "duration": 10,
+        "handler": "ledgehang",
+        "hurtbubbles": [
+          -26, -54, 4, 1,
+          -10, -33, 5, 1,
+          -22, -21, 9, 1,
+          -19, -18, 13, 1,
+          -3, -5, 4, 1,
+          -21, -33, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -6, -53, 4, 1,
+          -5, -34, 5, 1,
+          -22, -21, 9, 1,
+          -13, -18, 13, 1,
+          -3, -5, 4, 1,
+          -17, -33, 5, 1
+        ]
+      }
+    ]
+  },
+  "ledgedrop": {
+    "cancellable": [
+      "all"
+    ],
+    "transition": "airborne",
+    "disableIK": true,
+    "type": "passive",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, -4, 4, 1,
+          10, 20, 5, 1,
+          0, 15, 9, 1,
+          2, 30, 13, 1,
+          -2, -4, 4, 1,
+          6, 9, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, -4, 4, 1,
+          10, 20, 5, 1,
+          0, 15, 9, 1,
+          2, 30, 13, 1,
+          -2, -4, 4, 1,
+          6, 9, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, -4, 4, 1,
+          10, 20, 5, 1,
+          0, 15, 9, 1,
+          2, 30, 13, 1,
+          -2, -4, 4, 1,
+          6, 9, 5, 1
+        ]
+      }
+    ]
+  },
+  "ledgehang": {
+    "cancellable": null,
+    "transition": "ledgehang",
+    "disableIK": true,
+    "type": "passive",
+    "xOffset": -13,
+    "yOffset": 40,
+    "handler": "ledgehang",
+    "ungrabbable": true,
+    "interrupted": "ledgehit",
+    "keyframes": [
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          -12, -53, 4, 1,
+          -8, -35, 5, 1,
+          -24, -19, 9, 1,
+          -14, -18, 13, 1,
+          -3, -5, 4, 1,
+          -19, -33, 5, 1
+        ],
+        "tween": "quadInOut",
+        "interpolate": true
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          -12, -53, 4, 1,
+          -8, -35, 5, 1,
+          -24, -19, 9, 1,
+          -14, -18, 13, 1,
+          -3, -5, 4, 1,
+          -19, -33, 5, 1
+        ],
+        "tween": "quadInOut"
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -6, -53, 4, 1,
+          -5, -34, 5, 1,
+          -22, -21, 9, 1,
+          -13, -18, 13, 1,
+          -3, -5, 4, 1,
+          -17, -33, 5, 1
+        ]
+      }
+    ]
+  },
+  "ledgeattack0": {
+    "cancellable": null,
+    "transition": "idle",
+    "disableIK": true,
+    "type": "attack",
+    "xOffset": -10,
+    "yOffset": 40,
+    "ungrabbable": true,
+    "rooted": true,
+    "itan": true,
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          2, 25, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -5, 12, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          2, 25, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -5, 12, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "dx": 4
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          2, 25, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -5, 12, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          27, 16, 5, 1,
+          13, 28, 9, 1,
+          28, 26, 13, 1,
+          -2, 4, 4, 1,
+          13, 17, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "x": 30,
+            "y": 20,
+            "radius": 23,
+            "damage": 6,
+            "knockback": 8,
+            "growth": 7,
+            "sakurai": true
+          }
+        ]
+      },
+      {
+        "duration": 25,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          27, 16, 5, 1,
+          13, 28, 9, 1,
+          28, 26, 13, 1,
+          -2, 4, 4, 1,
+          13, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "ledgeattack100": {
+    "cancellable": null,
+    "transition": "idle",
+    "disableIK": true,
+    "type": "attack",
+    "xOffset": -10,
+    "yOffset": 40,
+    "ungrabbable": true,
+    "rooted": true,
+    "itan": true,
+    "keyframes": [
+      {
+        "duration": 18,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 24, 5, 1,
+          -16, 19, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -4, 14, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 24, 5, 1,
+          -16, 19, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -4, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 15,
+        "dx": 4,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          -4, 26, 5, 1,
+          -23, 17, 9, 1,
+          -16, 30, 13, 1,
+          -12, 4, 4, 1,
+          -10, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          28, 7, 5, 1,
+          17, 33, 9, 1,
+          39, 24, 13, 1,
+          -2, 4, 4, 1,
+          13, 16, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "x": 30,
+            "y": 20,
+            "radius": 23,
+            "damage": 6,
+            "knockback": 8,
+            "growth": 7,
+            "sakurai": true
+          }
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          28, 7, 5, 1,
+          17, 33, 9, 1,
+          39, 24, 13, 1,
+          -2, 4, 4, 1,
+          13, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "ledgestand0": {
+    "cancellable": null,
+    "transition": "idle",
+    "disableIK": true,
+    "type": "passive",
+    "handler": "ledgestand",
+    "xOffset": -10,
+    "yOffset": 40,
+    "ungrabbable": true,
+    "rooted": true,
+    "itan": true,
+    "keyframes": [
+      {
+        "duration": 16,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -5, 11, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 14,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -5, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "dx": 2,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "ledgestand100": {
+    "cancellable": null,
+    "transition": "idle",
+    "disableIK": true,
+    "type": "passive",
+    "handler": "ledgestand",
+    "xOffset": -10,
+    "yOffset": 40,
+    "ungrabbable": true,
+    "rooted": true,
+    "itan": true,
+    "keyframes": [
+      {
+        "duration": 30,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -5, 11, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 25,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -5, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "dx": 2,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "ledgeroll0": {
+    "cancellable": null,
+    "transition": "idle",
+    "disableIK": true,
+    "type": "passive",
+    "xOffset": -10,
+    "yOffset": 40,
+    "ungrabbable": true,
+    "rooted": true,
+    "itan": true,
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -4, 11, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -4, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -4, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 15,
+        "speed": 5,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -4, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -4, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "ledgeroll100": {
+    "cancellable": null,
+    "transition": "idle",
+    "disableIK": true,
+    "type": "passive",
+    "xOffset": -10,
+    "yOffset": 40,
+    "ungrabbable": true,
+    "rooted": true,
+    "itan": true,
+    "keyframes": [
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -4, 11, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          0, 20, 5, 1,
+          -10, 15, 9, 1,
+          -8, 30, 13, 1,
+          -12, 4, 4, 1,
+          -4, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 20, 5, 1,
+          0, 15, 9, 1,
+          2, 30, 13, 1,
+          -2, 4, 4, 1,
+          5, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "speed": 6,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 20, 5, 1,
+          0, 15, 9, 1,
+          2, 30, 13, 1,
+          -2, 4, 4, 1,
+          5, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 18,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 20, 5, 1,
+          0, 15, 9, 1,
+          2, 30, 13, 1,
+          -2, 4, 4, 1,
+          5, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "ledgehop": {
+    "cancellable": null,
+    "disableIK": true,
+    "type": "passive",
+    "cancel": "continue",
+    "slid": "continue",
+    "friction": 1,
+    "ungrabbable": true,
+    "rooted": true,
+    "itanEnd": 20,
+    "keyframes": [
+      {
+        "duration": 20,
+        "cancellable": "",
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          -10, 20, 5, 1,
+          0, 15, 9, 1,
+          -2, 30, 13, 1,
+          -2, 4, 4, 1,
+          -7, 11, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 5,
+        "airborne": true,
+        "speed": 12,
+        "dx": 6,
+        "jumpSpeed": 14,
+        "hurtbubbles": [
+          -5, 4, 4, 1,
+          -10, 20, 5, 1,
+          0, 15, 9, 1,
+          -2, 30, 13, 1,
+          -2, 4, 4, 1,
+          -7, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          5, -8, 4, 1,
+          8, 30, 5, 1,
+          -3, 30, 9, 1,
+          2, 35, 13, 1,
+          -2, -8, 4, 1,
+          3, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, -4, 4, 1,
+          12, 23, 5, 1,
+          -4, 22, 9, 1,
+          2, 30, 13, 1,
+          -2, -4, 4, 1,
+          6, 8, 5, 1
+        ]
+      }
+    ]
+  },
+  "walk": {
+    "cancellable": [
+      "all"
+    ],
+    "unbufferable": true,
+    "type": "movement",
+    "handler": "walk",
+    "transition": "walk",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 13,
+        "hurtbubbles": [
+          1, 4, 4, 1,
+          6, 33, 5, 1,
+          2, 35, 9, 1,
+          7, 49, 13, 1,
+          3, 12, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 13,
+        "hurtbubbles": [
+          1, 4, 4, 1,
+          6, 33, 5, 1,
+          2, 35, 9, 1,
+          7, 49, 13, 1,
+          3, 12, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 13,
+        "hurtbubbles": [
+          -9, 4, 4, 1,
+          -4, 34, 5, 1,
+          6, 34, 9, 1,
+          5, 48, 13, 1,
+          14, 4, 4, 1,
+          0, 26, 5, 1
+        ],
+        "audio": "lowtap"
+      },
+      {
+        "duration": 13,
+        "hurtbubbles": [
+          1, 13, 4, 1,
+          2, 36, 5, 1,
+          -2, 35, 9, 1,
+          2, 50, 13, 1,
+          2, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          2, 35, 5, 1,
+          -6, 34, 9, 1,
+          1, 49, 13, 1,
+          -13, 4, 4, 1,
+          0, 26, 5, 1
+        ],
+        "audio": "lowtap"
+      },
+      {
+        "duration": 13,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          2, 35, 5, 1,
+          -6, 34, 9, 1,
+          1, 49, 13, 1,
+          -13, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "stride": {
+    "cancellable": [
+      "all"
+    ],
+    "transition": "stride",
+    "handler": "walk",
+    "unbufferable": true,
+    "type": "movement",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 8,
+        "hurtbubbles": [
+          -2, 4, 4, 1,
+          4, 31, 5, 1,
+          0, 34, 9, 1,
+          -5, 46, 13, 1,
+          7, 13, 4, 1,
+          -3, 27, 5, 1
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          -2, 4, 4, 1,
+          4, 31, 5, 1,
+          0, 34, 9, 1,
+          -5, 46, 13, 1,
+          7, 13, 4, 1,
+          -3, 27, 5, 1
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          -8, 4, 4, 1,
+          -6, 30, 5, 1,
+          6, 30, 9, 1,
+          -4, 46, 13, 1,
+          14, 4, 4, 1,
+          1, 29, 5, 1
+        ],
+        "audio": "lowtap"
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          3, 13, 4, 1,
+          -1, 30, 5, 1,
+          1, 31, 9, 1,
+          1, 46, 13, 1,
+          1, 4, 4, 1,
+          -1, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          15, 4, 4, 1,
+          8, 30, 5, 1,
+          -8, 31, 9, 1,
+          2, 45, 13, 1,
+          -8, 4, 4, 1,
+          0, 26, 5, 1
+        ],
+        "audio": "lowtap"
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          15, 4, 4, 1,
+          8, 30, 5, 1,
+          -8, 31, 9, 1,
+          2, 45, 13, 1,
+          -8, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "dash": {
+    "cancellable": [
+      "dash",
+      "grab",
+      "dashattack",
+      "sidespecial",
+      "upspecial",
+      "pivot",
+      "skid",
+      "run",
+      "utap",
+      "jump",
+      "hop",
+      "shieldup",
+      "powershield",
+      "trip",
+      "dtaunt",
+      "staunt",
+      "utaunt"
+    ],
+    "type": "movement",
+    "dashSpeed": 6,
+    "moonwalkSpeed": 6,
+    "initialSpeed": 5.2,
+    "acceleration": 0.9,
+    "friction": 0.92,
+    "unbufferable": true,
+    "passthrough": false,
+    "noCancel": [
+      "platformdrop"
+    ],
+    "start": "dash",
+    "end": "dash",
+    "handler": "dash",
+    "slid": "dashslid",
+    "redirect": {
+      "grab": "dashgrab"
+    },
+    "audio": "bshhh",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 3,
+        "hurtbubbles": [
+          7, 4, 4, 1,
+          13, 23, 5, 1,
+          -7, 24, 9, 1,
+          2, 42, 13, 1,
+          -21, 4, 4, 1,
+          4, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          7, 4, 4, 1,
+          13, 23, 5, 1,
+          -7, 24, 9, 1,
+          2, 42, 13, 1,
+          -21, 4, 4, 1,
+          4, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 11,
+        "hurtbubbles": [
+          8, 4, 4, 1,
+          14, 22, 5, 1,
+          -7, 24, 9, 1,
+          5, 32, 13, 1,
+          -21, 4, 4, 1,
+          4, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          16, 4, 4, 1,
+          21, 16, 5, 1,
+          -5, 24, 9, 1,
+          9, 32, 13, 1,
+          -21, 4, 4, 1,
+          5, 16, 5, 1
+        ]
+      }
+    ]
+  },
+  "run": {
+    "cancellable": [
+      "dtaunt",
+      "staunt",
+      "utaunt",
+      "dash",
+      "run",
+      "grab",
+      "utap",
+      "sidespecial",
+      "groundspecial",
+      "downspecial",
+      "upspecial",
+      "dtap",
+      "ftap",
+      "skid",
+      "turnaround",
+      "jump",
+      "hop",
+      "jab",
+      "ftilt",
+      "crouch",
+      "shieldup",
+      "powershield",
+      "trip"
+    ],
+    "unbufferable": true,
+    "type": "movement",
+    "friction": 1,
+    "runSpeed": 6,
+    "acceleration": 0.25,
+    "transition": "run",
+    "handler": "run",
+    "redirect": {
+      "jab": "dashattack",
+      "ftilt": "dashattack",
+      "dtap": "dashattack",
+      "ftap": "dashattack",
+      "grab": "dashgrab"
+    },
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -1, 4, 4, 1,
+          13, 26, 5, 1,
+          6, 27, 9, 1,
+          11, 28, 13, 1,
+          -1, 17, 4, 1,
+          4, 16, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -1, 4, 4, 1,
+          13, 26, 5, 1,
+          6, 27, 9, 1,
+          11, 28, 13, 1,
+          -1, 17, 4, 1,
+          4, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -15, 4, 4, 1,
+          -1, 25, 5, 1,
+          15, 23, 9, 1,
+          11, 28, 13, 1,
+          23, 4, 4, 1,
+          8, 16, 5, 1
+        ],
+        "audio": "lowtap"
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          0, 16, 4, 1,
+          10, 27, 5, 1,
+          4, 24, 9, 1,
+          6, 27, 13, 1,
+          4, 4, 4, 1,
+          4, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          27, 4, 4, 1,
+          10, 27, 5, 1,
+          -1, 24, 9, 1,
+          7, 27, 13, 1,
+          -12, 4, 4, 1,
+          3, 16, 5, 1
+        ],
+        "audio": "lowtap"
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          27, 4, 4, 1,
+          10, 27, 5, 1,
+          -1, 24, 9, 1,
+          7, 27, 13, 1,
+          -12, 4, 4, 1,
+          3, 16, 5, 1
+        ]
+      }
+    ]
+  },
+  "walkpivot": {
+    "cancellable": [
+      "all"
+    ],
+    "noCancel": [
+      "walkpivot",
+      "walk",
+      "stride",
+      "idle",
+      "dash"
+    ],
+    "unbufferable": true,
+    "type": "movement",
+    "end": "walkpivot",
+    "slid": "dashslid",
+    "transition": "idle",
+    "keyframes": [
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          -6, 4, 4, 1,
+          -12, 32, 5, 1,
+          4, 34, 9, 1,
+          -4, 51, 13, 1,
+          6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "pivot": {
+    "cancellable": [
+      "all"
+    ],
+    "noCancel": [
+      "dash",
+      "walk",
+      "crouch",
+      "stride"
+    ],
+    "unbufferable": true,
+    "type": "movement",
+    "start": "pivot",
+    "end": "pivot",
+    "slid": "dashslid",
+    "keyframes": [
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          -6, 4, 4, 1,
+          -12, 32, 5, 1,
+          4, 34, 9, 1,
+          -4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "ftappivot": {
+    "cancellable": null,
+    "type": "passive",
+    "end": "stop",
+    "slid": "stop",
+    "transition": "ftap",
+    "start": "pivot",
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          -6, 4, 4, 1,
+          -12, 32, 5, 1,
+          4, 34, 9, 1,
+          -4, 51, 13, 1,
+          6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "dashslid": {
+    "cancellable": [
+      "all"
+    ],
+    "type": "movement",
+    "grabDirections": 68,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 12,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      },
+      {
+        "duration": 16,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "dashskid": {
+    "cancellable": [
+      "dash",
+      "dtaunt",
+      "staunt",
+      "utaunt",
+      "grab",
+      "sidespecial",
+      "groundspecial",
+      "downspecial",
+      "upspecial",
+      "turnaround",
+      "jump",
+      "hop",
+      "crouch",
+      "shieldup",
+      "powershield"
+    ],
+    "type": "passive",
+    "redirect": {
+      "grab": "dashgrab"
+    },
+    "start": "skid",
+    "iasa": 15,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 3,
+        "hurtbubbles": [
+          17, 4, 4, 1,
+          10, 20, 5, 1,
+          0, 27, 9, 1,
+          6, 42, 13, 1,
+          6, 4, 4, 1,
+          2, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 16,
+        "hurtbubbles": [
+          17, 4, 4, 1,
+          10, 20, 5, 1,
+          0, 27, 9, 1,
+          6, 42, 13, 1,
+          6, 4, 4, 1,
+          2, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "skid": {
+    "cancellable": [
+      "dtaunt",
+      "staunt",
+      "utaunt",
+      "grab",
+      "sidespecial",
+      "groundspecial",
+      "downspecial",
+      "upspecial",
+      "turnaround",
+      "jump",
+      "hop",
+      "crouch",
+      "shieldup",
+      "powershield"
+    ],
+    "type": "passive",
+    "redirect": {
+      "grab": "dashgrab"
+    },
+    "start": "skid",
+    "end": "stop",
+    "handler": "skid",
+    "iasa": 7,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 3,
+        "hurtbubbles": [
+          19, 4, 4, 1,
+          8, 21, 5, 1,
+          2, 27, 9, 1,
+          18, 28, 13, 1,
+          10, 4, 4, 1,
+          2, 15, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          19, 4, 4, 1,
+          8, 21, 5, 1,
+          2, 27, 9, 1,
+          18, 28, 13, 1,
+          10, 4, 4, 1,
+          2, 15, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          19, 4, 4, 1,
+          13, 20, 5, 1,
+          -5, 24, 9, 1,
+          7, 33, 13, 1,
+          -7, 4, 4, 1,
+          5, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -7, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "turnaround": {
+    "cancellable": [
+      "sidespecial",
+      "upspecial",
+      "skid",
+      "turnaround",
+      "jump",
+      "hop"
+    ],
+    "type": "passive",
+    "accel": -3,
+    "slid": "dashslid",
+    "transition": "idle",
+    "start": "skid",
+    "end": "turnaround",
+    "acceleration": 0.25,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 8,
+        "friction": 0.93,
+        "hurtbubbles": [
+          20, 4, 4, 1,
+          7, 26, 5, 1,
+          -2, 24, 9, 1,
+          -2, 34, 13, 1,
+          -5, 4, 4, 1,
+          8, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "handler": "turnaround",
+        "hurtbubbles": [
+          20, 4, 4, 1,
+          7, 26, 5, 1,
+          -2, 24, 9, 1,
+          -2, 34, 13, 1,
+          -5, 4, 4, 1,
+          8, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          -10, 20, 5, 1,
+          0, 24, 9, 1,
+          0, 31, 13, 1,
+          5, 4, 4, 1,
+          0, 13, 5, 1
+        ]
+      }
+    ]
+  },
+  "airjump0": {
+    "cancellable": [
+      "all"
+    ],
+    "noCancelInterrupt": true,
+    "platformDroppable": true,
+    "type": "movement",
+    "interrupted": "airjump",
+    "grabDirections": 68,
+    "turning": false,
+    "start": "airjumpStart",
+    "handler": "airjumpHandler",
+    "keyframes": [
+      {
+        "duration": 2,
+        "audio": "tempfx_djump",
+        "interpolate": true,
+        "hurtbubbles": [
+          4, -13, 4, 1,
+          5, 5, 5, 1,
+          -6, 11, 9, 1,
+          5, 22, 13, 1,
+          -1, -15, 4, 1,
+          -3, -3, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          4, -13, 4, 1,
+          5, 5, 5, 1,
+          -6, 11, 9, 1,
+          5, 22, 13, 1,
+          -1, -15, 4, 1,
+          -3, -3, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          -2, -12, 4, 1,
+          5, 5, 5, 1,
+          -6, 11, 9, 1,
+          9, 17, 13, 1,
+          -9, -12, 4, 1,
+          -3, -3, 5, 1
+        ]
+      },
+      {
+        "duration": 50,
+        "hurtbubbles": [
+          -23, -12, 4, 1,
+          6, 6, 5, 1,
+          -8, 15, 9, 1,
+          9, 20, 13, 1,
+          -19, -18, 4, 1,
+          0, -1, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "airjump0back": {
+    "cancellable": [
+      "all"
+    ],
+    "noCancelInterrupt": true,
+    "platformDroppable": true,
+    "type": "movement",
+    "interrupted": "airjump",
+    "grabDirections": 68,
+    "turning": false,
+    "start": "airjumpStart",
+    "handler": "airjumpHandler",
+    "keyframes": [
+      {
+        "duration": 2,
+        "audio": "tempfx_djump",
+        "hurtbubbles": [
+          12, -20, 4, 1,
+          -2, -1, 5, 1,
+          13, 4, 9, 1,
+          -1, 15, 13, 1,
+          14, -23, 4, 1,
+          9, -6, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          12, -20, 4, 1,
+          -2, -1, 5, 1,
+          13, 4, 9, 1,
+          -1, 15, 13, 1,
+          14, -23, 4, 1,
+          9, -6, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          -3, -18, 4, 1,
+          8, 5, 5, 1,
+          -6, 13, 9, 1,
+          6, 22, 13, 1,
+          -9, -15, 4, 1,
+          -1, 4, 5, 1
+        ]
+      },
+      {
+        "duration": 50,
+        "hurtbubbles": [
+          -15, -11, 4, 1,
+          9, 5, 5, 1,
+          -10, 14, 9, 1,
+          9, 20, 13, 1,
+          -21, -9, 4, 1,
+          -3, 4, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "hop": {
+    "cancellable": null,
+    "slid": "stop",
+    "start": "hop",
+    "handler": "hop",
+    "platformDroppable": true,
+    "type": "movement",
+    "grabDirections": 68,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 3,
+        "cancellable": [
+          "grab",
+          "utap",
+          "upspecial"
+        ],
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          13, 13, 5, 1,
+          0, 14, 9, 1,
+          1, 30, 13, 1,
+          -5, 4, 4, 1,
+          2, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "cancellable": [
+          "grab",
+          "utap",
+          "upspecial"
+        ],
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          13, 13, 5, 1,
+          0, 14, 9, 1,
+          1, 30, 13, 1,
+          -5, 4, 4, 1,
+          2, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "cancellable": [
+          "grab",
+          "utap",
+          "uair",
+          "nair",
+          "fair",
+          "bair",
+          "dair",
+          "upspecial",
+          "airupspecial",
+          "sidespecial",
+          "airsidespecial",
+          "groundspecial",
+          "airspecial",
+          "downspecial",
+          "airdownspecial",
+          "airdodge"
+        ],
+        "airborne": true,
+        "jump": 8,
+        "fullJump": 13,
+        "effect": "hop",
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          13, 13, 5, 1,
+          0, 14, 9, 1,
+          1, 30, 13, 1,
+          -5, 4, 4, 1,
+          2, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "cancellable": [
+          "all"
+        ],
+        "hurtbubbles": [
+          10, -8, 4, 1,
+          13, 13, 5, 1,
+          0, 14, 9, 1,
+          1, 30, 13, 1,
+          -5, -8, 4, 1,
+          2, 15, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "cancellable": [
+          "all"
+        ],
+        "hurtbubbles": [
+          12, -4, 4, 1,
+          4, 20, 5, 1,
+          0, 17, 9, 1,
+          1, 37, 13, 1,
+          -5, -4, 4, 1,
+          4, 28, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "cancellable": [
+          "all"
+        ],
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "shieldup": {
+    "cancellable": [
+      "grab",
+      "dodgeback",
+      "spotdodge",
+      "dodgeforth"
+    ],
+    "specialDrop": true,
+    "type": "shield",
+    "transition": "shield",
+    "handler": "shield",
+    "alwaysHandle": true,
+    "shielded": "shield",
+    "start": "shield",
+    "slid": "noTeeter",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 6,
+        "audio": "shieldup",
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          12, 40, 5, 1,
+          0, 24, 9, 1,
+          -5, 38, 13, 1,
+          -2, 4, 4, 1,
+          12, 30, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          12, 40, 5, 1,
+          0, 24, 9, 1,
+          -5, 38, 13, 1,
+          -2, 4, 4, 1,
+          12, 30, 5, 1
+        ]
+      }
+    ]
+  },
+  "shield": {
+    "cancellable": [
+      "dodgeback",
+      "spotdodge",
+      "dodgeforth",
+      "shielddrop"
+    ],
+    "specialDrop": true,
+    "type": "shield",
+    "transition": "shield",
+    "handler": "shield",
+    "alwaysHandle": true,
+    "shieldbrake": 0.1,
+    "shielded": "shield",
+    "slid": "noTeeter",
+    "keyframes": [
+      {
+        "duration": 40,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          12, 40, 5, 1,
+          0, 24, 9, 1,
+          -5, 38, 13, 1,
+          -2, 4, 4, 1,
+          12, 30, 5, 1
+        ]
+      },
+      {
+        "duration": 40,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          12, 40, 5, 1,
+          0, 24, 9, 1,
+          -5, 38, 13, 1,
+          -2, 4, 4, 1,
+          12, 30, 5, 1
+        ]
+      }
+    ]
+  },
+  "crumple": {
+    "cancellable": null,
+    "type": "passive",
+    "transition": "fallen",
+    "start": "crumple",
+    "handler": "crumple",
+    "keyframes": [
+      {
+        "duration": 88,
+        "interpolate": true,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          25, 6, 5, 1,
+          -7, 11, 9, 1,
+          6, 15, 13, 1,
+          -14, 4, 4, 1,
+          7, 5, 5, 1
+        ]
+      },
+      {
+        "duration": 0,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          25, 6, 5, 1,
+          -7, 11, 9, 1,
+          6, 15, 13, 1,
+          -14, 4, 4, 1,
+          7, 5, 5, 1
+        ]
+      }
+    ]
+  },
+  "shielddrop": {
+    "cancellable": [
+      "hop",
+      "jump"
+    ],
+    "specialDrop": true,
+    "type": "passive",
+    "audio": "pop",
+    "armorEnd": 3,
+    "onInjured": "parry",
+    "iasa": 5,
+    "keyframes": [
+      {
+        "duration": 18,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "dodgeback": {
+    "cancellable": null,
+    "type": "passive",
+    "end": "stop",
+    "slid": "stop",
+    "itanStart": 4,
+    "itanEnd": 19,
+    "keyframes": [
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          -4, 28, 5, 1,
+          -13, 23, 9, 1,
+          -16, 39, 13, 1,
+          -2, 4, 4, 1,
+          -3, 16, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 7,
+        "speed": -11,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          -4, 28, 5, 1,
+          -13, 23, 9, 1,
+          -16, 39, 13, 1,
+          -2, 4, 4, 1,
+          -3, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          1, 25, 5, 1,
+          -7, 26, 9, 1,
+          0, 40, 13, 1,
+          -6, 4, 4, 1,
+          -3, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "spotdodge": {
+    "cancellable": null,
+    "type": "passive",
+    "itanStart": 2,
+    "keyframes": [
+      {
+        "duration": 2,
+        "audio": "tempfx_dodge",
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          7, 9, 5, 1,
+          -17, 21, 9, 1,
+          2, 27, 13, 1,
+          -22, 4, 4, 1,
+          -9, 9, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          7, 9, 5, 1,
+          -17, 21, 9, 1,
+          2, 27, 13, 1,
+          -22, 4, 4, 1,
+          -9, 9, 5, 1
+        ]
+      },
+      {
+        "duration": 9,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          11, 8, 5, 1,
+          -13, 22, 9, 1,
+          6, 25, 13, 1,
+          -22, 4, 4, 1,
+          -6, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "dodgeforth": {
+    "cancellable": null,
+    "type": "passive",
+    "slid": "stop",
+    "end": "stop",
+    "itanStart": 4,
+    "itanEnd": 19,
+    "keyframes": [
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          20, 24, 5, 1,
+          11, 27, 9, 1,
+          23, 39, 13, 1,
+          -2, 4, 4, 1,
+          11, 20, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 7,
+        "speed": 11,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          20, 24, 5, 1,
+          11, 27, 9, 1,
+          23, 39, 13, 1,
+          -2, 4, 4, 1,
+          11, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "start": "pivot",
+        "hurtbubbles": [
+          0, 4, 4, 1,
+          0, 24, 5, 1,
+          0, 24, 9, 1,
+          0, 45, 13, 1,
+          0, 4, 4, 1,
+          0, 30, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          0, 4, 4, 1,
+          0, 24, 5, 1,
+          0, 24, 9, 1,
+          0, 45, 13, 1,
+          0, 4, 4, 1,
+          0, 30, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "floorforth": {
+    "cancellable": null,
+    "type": "passive",
+    "friction": 0.96,
+    "slid": "stop",
+    "itanEnd": 33,
+    "keyframes": [
+      {
+        "duration": 7,
+        "interpolate": true,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          15, 16, 5, 1,
+          3, 29, 9, 1,
+          17, 30, 13, 1,
+          -2, 4, 4, 1,
+          7, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 9,
+        "speed": 12.5,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          15, 16, 5, 1,
+          3, 29, 9, 1,
+          17, 30, 13, 1,
+          -2, 4, 4, 1,
+          7, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 16,
+        "friction": 0.6,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          16, 26, 5, 1,
+          3, 37, 9, 1,
+          15, 39, 13, 1,
+          -2, 4, 4, 1,
+          6, 25, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "floorback": {
+    "cancellable": null,
+    "type": "passive",
+    "friction": 0.96,
+    "slid": "stop",
+    "itanEnd": 33,
+    "keyframes": [
+      {
+        "duration": 7,
+        "interpolate": true,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          4, 22, 5, 1,
+          -11, 20, 9, 1,
+          -8, 32, 13, 1,
+          -2, 4, 4, 1,
+          0, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 9,
+        "speed": -12.5,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          4, 22, 5, 1,
+          -11, 20, 9, 1,
+          -8, 32, 13, 1,
+          -2, 4, 4, 1,
+          0, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 16,
+        "friction": 0.6,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          7, 27, 5, 1,
+          -15, 26, 9, 1,
+          -4, 38, 13, 1,
+          -2, 4, 4, 1,
+          -2, 22, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "airdodge": {
+    "cancellable": [
+      "dodgepanic"
+    ],
+    "cancel": 10,
+    "type": "passive",
+    "aerodynamics": 0.85,
+    "airdodgeSpeed": 15,
+    "decay": 0.9,
+    "bufferAngle": -1,
+    "transition": "helpless",
+    "start": "airdodge",
+    "handler": "airdodge",
+    "itanStart": 3,
+    "itanEnd": 29,
+    "keyframes": [
+      {
+        "noFastfall": true,
+        "nodi": true,
+        "duration": 3,
+        "gravity": 0,
+        "audio": "longwhiff",
+        "hurtbubbles": [
+          -14, -6, 4, 1,
+          10, 0, 5, 1,
+          -10, 16, 9, 1,
+          9, 13, 13, 1,
+          -17, -1, 4, 1,
+          -3, 4, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "noFastfall": true,
+        "nodi": true,
+        "duration": 26,
+        "gravity": 0,
+        "hurtbubbles": [
+          -14, -6, 4, 1,
+          10, 0, 5, 1,
+          -10, 16, 9, 1,
+          9, 13, 13, 1,
+          -17, -1, 4, 1,
+          -3, 4, 5, 1
+        ]
+      },
+      {
+        "duration": 14,
+        "hurtbubbles": [
+          -14, -6, 4, 1,
+          10, 0, 5, 1,
+          -10, 16, 9, 1,
+          9, 13, 13, 1,
+          -17, -1, 4, 1,
+          -3, 4, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          -13, -4, 4, 1,
+          13, -9, 5, 1,
+          -1, -16, 9, 1,
+          11, 8, 13, 1,
+          -11, -9, 4, 1,
+          2, -8, 5, 1
+        ]
+      }
+    ]
+  },
+  "dodgepanic": {
+    "cancellable": null,
+    "cancel": 10,
+    "transition": "helpless",
+    "ledgestall": true,
+    "pseudojump": true,
+    "noFastfall": true,
+    "nodi": true,
+    "type": "passive",
+    "keyframes": [
+      {
+        "duration": 16,
+        "gravity": 0,
+        "interpolate": true,
+        "hurtbubbles": [
+          -14, -6, 4, 1,
+          25, 7, 5, 1,
+          16, 20, 9, 1,
+          26, 16, 13, 1,
+          -17, -1, 4, 1,
+          10, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "grabDirections": 68,
+        "hurtbubbles": [
+          -14, -6, 4, 1,
+          25, 7, 5, 1,
+          16, 20, 9, 1,
+          26, 16, 13, 1,
+          -17, -1, 4, 1,
+          10, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 16,
+        "grabDirections": 68,
+        "hurtbubbles": [
+          -14, -6, 4, 1,
+          13, 15, 5, 1,
+          1, 18, 9, 1,
+          10, 26, 13, 1,
+          -17, -1, 4, 1,
+          1, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          -11, 9, 4, 1,
+          11, 19, 5, 1,
+          10, 5, 9, 1,
+          17, 12, 13, 1,
+          -16, 3, 4, 1,
+          1, 12, 5, 1
+        ]
+      }
+    ]
+  },
+  "shieldgrab": {
+    "cancellable": null,
+    "transition": "grab",
+    "type": "attack",
+    "keyframes": [
+      {
+        "duration": 4,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          12, 19, 5, 1,
+          3, 22, 9, 1,
+          6, 34, 13, 1,
+          -5, 4, 4, 1,
+          5, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          12, 19, 5, 1,
+          3, 22, 9, 1,
+          6, 34, 13, 1,
+          -5, 4, 4, 1,
+          5, 16, 5, 1
+        ]
+      }
+    ]
+  },
+  "grab": {
+    "cancellable": null,
+    "holdingAnimation": "holding",
+    "collided": "grab",
+    "type": "attack",
+    "iasa": 4,
+    "keyframes": [
+      {
+        "duration": 4,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          6, 23, 5, 1,
+          0, 24, 9, 1,
+          -5, 38, 13, 1,
+          -5, 4, 4, 1,
+          5, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          6, 23, 5, 1,
+          0, 24, 9, 1,
+          -5, 38, 13, 1,
+          -5, 4, 4, 1,
+          5, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          15, 14, 5, 1,
+          5, 25, 9, 1,
+          25, 26, 13, 1,
+          -5, 4, 4, 1,
+          5, 20, 5, 1
+        ],
+        "audio": "grab_whiff",
+        "hitbubbles": [
+          {
+            "type": "grab",
+            "smear": {
+              "x": 18,
+              "y": 13
+            },
+            "x": 25,
+            "y": 26,
+            "radius": 20
+          }
+        ]
+      },
+      {
+        "duration": 14,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          11, 12, 5, 1,
+          8, 29, 9, 1,
+          20, 18, 13, 1,
+          -5, 4, 4, 1,
+          5, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          9, 21, 5, 1,
+          3, 30, 9, 1,
+          16, 30, 13, 1,
+          -5, 4, 4, 1,
+          5, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "holding": {
+    "cancellable": [
+      "fthrow",
+      "bthrow",
+      "uthrow",
+      "pummel",
+      "dthrow"
+    ],
+    "transition": "holding",
+    "type": "holding",
+    "grabForce": 10,
+    "start": "grab",
+    "interrupted": "release",
+    "interact": "holding",
+    "friction": 0.7,
+    "releasable": true,
+    "cancel": "holding",
+    "heldAnimation": "held",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          13, 21, 4, 1,
+          -11, 32, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1,
+          20, 30, 0, 0
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          13, 21, 4, 1,
+          -11, 32, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1,
+          20, 30, 0, 0
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          13, 21, 4, 1,
+          -11, 32, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1,
+          20, 30, 0, 0
+        ]
+      }
+    ]
+  },
+  "release": {
+    "cancellable": null,
+    "type": "passive",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 26, 4, 1,
+          -17, 25, 5, 1,
+          3, 33, 9, 1,
+          -11, 39, 13, 1,
+          -2, 4, 4, 1,
+          -6, 23, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          6, 26, 4, 1,
+          -17, 25, 5, 1,
+          3, 33, 9, 1,
+          -11, 39, 13, 1,
+          -2, 4, 4, 1,
+          -6, 23, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "airrelease": {
+    "cancellable": null,
+    "type": "passive",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          2, 39, 4, 1,
+          -15, 29, 5, 1,
+          10, 39, 9, 1,
+          -6, 43, 13, 1,
+          -2, 4, 4, 1,
+          -1, 25, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          2, 39, 4, 1,
+          -15, 29, 5, 1,
+          10, 39, 9, 1,
+          -6, 43, 13, 1,
+          -2, 4, 4, 1,
+          -1, 25, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "pummel": {
+    "cancellable": null,
+    "transition": "holding",
+    "type": "holding",
+    "grabForce": 10,
+    "start": "pummel",
+    "interrupted": "release",
+    "interact": "holding",
+    "cancel": "holding",
+    "heldAnimation": "held",
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          15, 21, 4, 1,
+          -13, 31, 5, 1,
+          6, 36, 9, 1,
+          -6, 47, 13, 1,
+          -2, 4, 4, 1,
+          -3, 28, 5, 1,
+          23, 28, 0, 0
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          15, 21, 4, 1,
+          -13, 31, 5, 1,
+          6, 36, 9, 1,
+          -6, 47, 13, 1,
+          -2, 4, 4, 1,
+          -3, 28, 5, 1,
+          23, 28, 0, 0
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          13, 21, 4, 1,
+          2, 36, 5, 1,
+          17, 28, 9, 1,
+          16, 42, 13, 1,
+          -2, 4, 4, 1,
+          -1, 24, 5, 1,
+          18, 25, 0, 0
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "x": 30,
+            "y": 20,
+            "radius": 13,
+            "damage": 2.5,
+            "knockback": 4,
+            "growth": 4,
+            "sakurai": true,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 23,
+        "hurtbubbles": [
+          15, 21, 4, 1,
+          0, 36, 5, 1,
+          15, 28, 9, 1,
+          13, 42, 13, 1,
+          -2, 4, 4, 1,
+          -3, 23, 5, 1,
+          18, 25, 0, 0
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          13, 21, 4, 1,
+          -11, 32, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1,
+          20, 30, 0, 0
+        ]
+      }
+    ]
+  },
+  "dthrow": {
+    "cancellable": null,
+    "cancel": "continue",
+    "transition": "dthrowhit",
+    "type": "throw",
+    "grabForce": 10,
+    "start": "grab",
+    "interrupted": "release",
+    "interact": "throwing",
+    "heldAnimation": "held",
+    "keyframes": [
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          25, 85, 4, 1,
+          -1, 58, 5, 1,
+          11, 36, 9, 1,
+          4, 55, 13, 1,
+          -2, 4, 4, 1,
+          -1, 44, 5, 1,
+          25, 90, 0, 0
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          25, 85, 4, 1,
+          -1, 58, 5, 1,
+          11, 36, 9, 1,
+          4, 55, 13, 1,
+          -2, 4, 4, 1,
+          -1, 44, 5, 1,
+          25, 90, 0, 0
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          24, 4, 4, 1,
+          2, 46, 5, 1,
+          8, 23, 9, 1,
+          14, 40, 13, 1,
+          -2, 4, 4, 1,
+          -2, 35, 5, 1,
+          20, 0, 0, 0
+        ]
+      }
+    ]
+  },
+  "dthrowhit": {
+    "cancellable": null,
+    "cancel": "continue",
+    "start": "release",
+    "type": "attack",
+    "iasa": 5,
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          24, 4, 4, 1,
+          2, 46, 5, 1,
+          8, 23, 9, 1,
+          14, 40, 13, 1,
+          -2, 4, 4, 1,
+          -2, 35, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "throw",
+            "x": 5,
+            "y": 25,
+            "radius": 20,
+            "damage": 3,
+            "knockback": 8,
+            "growth": 18,
+            "angle": 160,
+            "strong": true,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 24,
+        "hurtbubbles": [
+          24, 4, 4, 1,
+          13, 20, 5, 1,
+          -1, 36, 9, 1,
+          13, 38, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "uthrow": {
+    "cancellable": null,
+    "cancel": "continue",
+    "transition": "uthrowhit",
+    "type": "throw",
+    "grabForce": 10,
+    "start": "grab",
+    "interrupted": "release",
+    "interact": "throwing",
+    "heldAnimation": "held",
+    "keyframes": [
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          14, 51, 4, 1,
+          -11, 32, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1,
+          16, 52, 0, 0
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          14, 51, 4, 1,
+          -11, 32, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1,
+          16, 52, 0, 0
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 69, 4, 1,
+          -1, 38, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1,
+          5, 72, 0, 0
+        ]
+      }
+    ]
+  },
+  "uthrowhit": {
+    "cancellable": null,
+    "cancel": "continue",
+    "start": "release",
+    "type": "attack",
+    "iasa": 10,
+    "keyframes": [
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          6, 69, 4, 1,
+          -1, 38, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1
+        ],
+        "audio": "longwhiff",
+        "hitbubbles": [
+          {
+            "type": "throw",
+            "y": 60,
+            "radius": 26,
+            "damage": 5,
+            "knockback": 10,
+            "growth": 14,
+            "angle": 75,
+            "strong": true
+          }
+        ]
+      },
+      {
+        "duration": 24,
+        "hurtbubbles": [
+          5, 77, 4, 1,
+          -1, 48, 5, 1,
+          10, 33, 9, 1,
+          3, 51, 13, 1,
+          -2, 4, 4, 1,
+          0, 37, 5, 1
+        ],
+        "tween": "cubicOut"
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 31, 5, 1,
+          -5, 34, 9, 1,
+          5, 50, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "fthrow": {
+    "cancellable": null,
+    "cancel": "continue",
+    "transition": "fthrowhit",
+    "type": "throw",
+    "grabForce": 10,
+    "start": "grab",
+    "interrupted": "release",
+    "interact": "throwing",
+    "heldAnimation": "held",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          38, 41, 4, 1,
+          -2, 36, 5, 1,
+          17, 33, 9, 1,
+          8, 47, 13, 1,
+          -2, 4, 4, 1,
+          3, 29, 5, 1,
+          40, 41, 0, 0
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          38, 41, 4, 1,
+          -2, 36, 5, 1,
+          17, 33, 9, 1,
+          8, 47, 13, 1,
+          -2, 4, 4, 1,
+          3, 29, 5, 1,
+          40, 41, 0, 0
+        ]
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          38, 41, 4, 1,
+          0, 37, 5, 1,
+          18, 33, 9, 1,
+          12, 47, 13, 1,
+          -2, 4, 4, 1,
+          5, 29, 5, 1,
+          40, 41, 0, 0
+        ]
+      },
+      {
+        "duration": 30,
+        "hurtbubbles": [
+          38, 41, 4, 1,
+          3, 37, 5, 1,
+          19, 33, 9, 1,
+          15, 47, 13, 1,
+          -2, 4, 4, 1,
+          8, 29, 5, 1,
+          40, 41, 0, 0
+        ]
+      }
+    ]
+  },
+  "fthrowhit": {
+    "cancellable": null,
+    "cancel": "continue",
+    "start": "release",
+    "type": "attack",
+    "iasa": 9,
+    "keyframes": [
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          38, 41, 4, 1,
+          -2, 36, 5, 1,
+          17, 33, 9, 1,
+          8, 47, 13, 1,
+          -2, 4, 4, 1,
+          3, 29, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "throw",
+            "x": 40,
+            "y": 50,
+            "radius": 20,
+            "damage": 8,
+            "knockback": 8,
+            "growth": 8,
+            "angle": 24,
+            "strong": true,
+            "audio": "hit"
+          }
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          1, 37, 4, 1,
+          -18, 32, 5, 1,
+          0, 25, 9, 1,
+          -8, 37, 13, 1,
+          2, 4, 4, 1,
+          -15, 22, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          -6, 10, 4, 1,
+          -18, 32, 5, 1,
+          -2, 22, 9, 1,
+          -4, 34, 13, 1,
+          5, 4, 4, 1,
+          -17, 19, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "bthrow": {
+    "cancellable": null,
+    "cancel": "continue",
+    "transition": "bthrowhit",
+    "type": "throw",
+    "grabForce": 10,
+    "start": "grab",
+    "interrupted": "release",
+    "interact": "throwing",
+    "heldAnimation": "heldpivot",
+    "keyframes": [
+      {
+        "duration": 14,
+        "hurtbubbles": [
+          -3, 47, 4, 1,
+          -11, 32, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1,
+          0, 48, 0, 0
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 120,
+        "hurtbubbles": [
+          -3, 47, 4, 1,
+          -11, 32, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1,
+          0, 48, 0, 0
+        ]
+      }
+    ]
+  },
+  "bthrowhit": {
+    "cancellable": null,
+    "cancel": "continue",
+    "start": "release",
+    "type": "attack",
+    "iasa": 5,
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          -3, 47, 4, 1,
+          -11, 32, 5, 1,
+          12, 35, 9, 1,
+          2, 45, 13, 1,
+          -2, 4, 4, 1,
+          1, 27, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "throw",
+            "y": 30,
+            "x": -5,
+            "radius": 24,
+            "damage": 6,
+            "knockback": 10,
+            "growth": 5,
+            "angle": 130,
+            "strong": true
+          }
+        ]
+      },
+      {
+        "duration": 17,
+        "hurtbubbles": [
+          -31, 47, 4, 1,
+          -23, 27, 5, 1,
+          5, 34, 9, 1,
+          -7, 40, 13, 1,
+          3, 4, 4, 1,
+          -7, 24, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -31, 21, 4, 1,
+          -21, 29, 5, 1,
+          5, 27, 9, 1,
+          -10, 35, 13, 1,
+          6, 4, 4, 1,
+          -5, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "held": {
+    "transition": "held",
+    "cancellable": null,
+    "cancel": "held",
+    "noFastfall": true,
+    "nodi": true,
+    "type": "passive",
+    "pivotx": 10,
+    "pivoty": 15,
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "heldpivot": {
+    "transition": "held",
+    "cancellable": null,
+    "cancel": "held",
+    "noFastfall": true,
+    "start": "pivot",
+    "nodi": true,
+    "type": "passive",
+    "pivotx": 10,
+    "pivoty": 15,
+    "keyframes": [
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          -6, 4, 4, 1,
+          -12, 32, 5, 1,
+          4, 34, 9, 1,
+          -4, 51, 13, 1,
+          6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "released": {
+    "cancellable": null,
+    "noFastfall": true,
+    "nodi": true,
+    "type": "passive",
+    "keyframes": [
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          11, 7, 4, 1,
+          7, 22, 5, 1,
+          -7, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -9, 4, 1,
+          0, 8, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          11, 7, 4, 1,
+          7, 22, 5, 1,
+          -7, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -9, 4, 1,
+          0, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "airreleased": {
+    "cancellable": null,
+    "noFastfall": true,
+    "nodi": true,
+    "type": "passive",
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          5, 14, 4, 1,
+          2, 32, 5, 1,
+          -19, 23, 9, 1,
+          -13, 40, 13, 1,
+          0, -2, 4, 1,
+          -5, 20, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "dy": 10,
+        "dx": -6,
+        "duration": 10,
+        "hurtbubbles": [
+          5, 14, 4, 1,
+          2, 32, 5, 1,
+          -19, 23, 9, 1,
+          -13, 40, 13, 1,
+          0, -2, 4, 1,
+          -5, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "dashgrab": {
+    "cancellable": null,
+    "collided": "grab",
+    "holdingAnimation": "holding",
+    "type": "attack",
+    "friction": 0.9,
+    "end": "stop",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 7,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          7, 26, 5, 1,
+          -9, 19, 9, 1,
+          -3, 33, 13, 1,
+          -2, 4, 4, 1,
+          1, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          7, 26, 5, 1,
+          -9, 19, 9, 1,
+          -3, 33, 13, 1,
+          -2, 4, 4, 1,
+          1, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          12, 24, 5, 1,
+          17, 8, 9, 1,
+          60, 23, 13, 1,
+          -2, 4, 4, 1,
+          7, 14, 5, 1
+        ],
+        "audio": "grab_whiff",
+        "hitbubbles": [
+          {
+            "type": "grab",
+            "next": true,
+            "smear": {
+              "x": 25,
+              "y": 20
+            },
+            "x": 64,
+            "y": 20,
+            "radius": 13
+          }
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          1, 23, 5, 1,
+          10, 13, 9, 1,
+          60, 23, 13, 1,
+          -2, 4, 4, 1,
+          0, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 24,
+        "hurtbubbles": [
+          5, 4, 4, 1,
+          10, 13, 5, 1,
+          -5, 17, 9, 1,
+          30, 30, 13, 1,
+          -2, 4, 4, 1,
+          0, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ],
+    "iasa": 6
+  },
+  "groundspecial": {
+    "cancellable": null,
+    "type": "special",
+    "reversible": true,
+    "iasa": 8,
+    "cost": 0.05,
+    "keyframes": [
+      {
+        "duration": 2,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 4, 4, 3,
+          6, 20, 5, 3,
+          0, 24, 9, 3,
+          1, 27, 13, 3,
+          -5, 4, 4, 3,
+          5, 20, 5, 3
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          10, 4, 4, 3,
+          6, 20, 5, 3,
+          0, 24, 9, 3,
+          1, 27, 13, 3,
+          -5, 4, 4, 3,
+          5, 20, 5, 3
+        ]
+      },
+      {
+        "duration": 7,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          6, 20, 5, 1,
+          0, 24, 9, 1,
+          1, 27, 13, 1,
+          -5, 4, 4, 1,
+          5, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 19,
+        "cancellable": [
+          "hop"
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_groundspecial": {
+    "cancellable": null,
+    "type": "special",
+    "reversible": true,
+    "iasa": 8,
+    "keyframes": [
+      {
+        "duration": 5,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 4, 4, 3,
+          6, 20, 5, 3,
+          -9, 15, 9, 3,
+          0, 27, 13, 3,
+          -5, 4, 4, 3,
+          0, 13, 5, 3
+        ]
+      },
+      {
+        "duration": 235,
+        "cancellable": [
+          "sidespecial",
+          "airsidespecial",
+          "hop",
+          "shieldup",
+          "airjump"
+        ],
+        "hurtbubbles": [
+          10, 4, 4, 3,
+          6, 20, 5, 3,
+          -9, 15, 9, 3,
+          0, 27, 13, 3,
+          -5, 4, 4, 3,
+          0, 13, 5, 3
+        ]
+      },
+      {
+        "duration": 26,
+        "cancellable": [
+          "all"
+        ],
+        "hurtbubbles": [
+          10, 4, 4, 3,
+          6, 20, 5, 3,
+          -9, 15, 9, 3,
+          0, 27, 13, 3,
+          -5, 4, 4, 3,
+          0, 13, 5, 3
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "sidespecial": {
+    "cancellable": null,
+    "cancel": "continue",
+    "slid": "continue",
+    "nodi": true,
+    "noFastfall": true,
+    "type": "special",
+    "cost": 0.2,
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -28, 5, 4, 1,
+          12, 5, 5, 1,
+          12, 13, 9, 1,
+          20, 14, 13, 1,
+          -27, 19, 4, 1,
+          -8, 10, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -28, 5, 4, 1,
+          12, 5, 5, 1,
+          12, 13, 9, 1,
+          20, 14, 13, 1,
+          -27, 19, 4, 1,
+          -8, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          -29, 5, 4, 1,
+          11, 18, 5, 1,
+          11, 5, 9, 1,
+          20, 14, 13, 1,
+          -27, 19, 4, 1,
+          -8, 10, 5, 1
+        ],
+        "audio": "gunpew",
+        "spawn": "spawnOrb"
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          -28, 17, 4, 1,
+          11, 18, 5, 1,
+          11, 5, 9, 1,
+          20, 14, 13, 1,
+          -26, 7, 4, 1,
+          -8, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          -8, 4, 4, 1,
+          5, 14, 5, 1,
+          0, 16, 9, 1,
+          13, 15, 13, 1,
+          -26, 7, 4, 1,
+          -8, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          -16, 5, 4, 1,
+          5, 6, 5, 1,
+          -4, 20, 9, 1,
+          13, 18, 13, 1,
+          -6, 4, 4, 1,
+          -8, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ],
+    "iasa": 12
+  },
+  "downspecial": {
+    "cancellable": [
+      "shieldup"
+    ],
+    "cancel": "continue",
+    "transition": "downspecial2",
+    "attacking": false,
+    "start": "dsStart",
+    "handler": "dsHandler",
+    "type": "special",
+    "keyframes": [
+      {
+        "duration": 4,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          21, 20, 5, 1,
+          -17, 23, 9, 1,
+          1, 45, 13, 1,
+          -5, 4, 4, 1,
+          2, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 500,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          21, 20, 5, 1,
+          -17, 23, 9, 1,
+          1, 45, 13, 1,
+          -5, 4, 4, 1,
+          2, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "downspecial2": {
+    "cancellable": [
+      "all"
+    ],
+    "type": "special",
+    "keyframes": [
+      {
+        "duration": 6,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          21, 20, 5, 1,
+          -17, 23, 9, 1,
+          1, 45, 13, 1,
+          -5, 4, 4, 1,
+          2, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          21, 20, 5, 1,
+          -17, 23, 9, 1,
+          1, 45, 13, 1,
+          -5, 4, 4, 1,
+          2, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "upspecial": {
+    "cancellable": null,
+    "slid": "continue",
+    "cancel": 10,
+    "noFastfall": true,
+    "nodi": true,
+    "type": "special",
+    "reversible": true,
+    "grabDirections": 212,
+    "friction": 0.92,
+    "keyframes": [
+      {
+        "duration": 3,
+        "noLedgeGrab": true,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "noLedgeGrab": true,
+        "hurtbubbles": [
+          -25, 27, 4, 1,
+          5, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 15, 13, 1,
+          -25, 23, 4, 1,
+          15, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "audio": "shortwhiff",
+        "noLedgeGrab": true,
+        "hitbubbles": [
+          {
+            "type": "special",
+            "y": 5,
+            "radius": 30,
+            "flags": [
+              "fixed"
+            ],
+            "damage": 3,
+            "knockback": 12,
+            "angle": 0,
+            "color": [
+              0.5,
+              1,
+              0.6,
+              1
+            ],
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -25, 27, 4, 1,
+          5, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 15, 13, 1,
+          -25, 23, 4, 1,
+          25, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -25, 24, 4, 1,
+          30, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 15, 13, 1,
+          -25, 16, 4, 1,
+          35, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "start": "us5Start",
+        "noLedgeGrab": true,
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "special",
+            "y": 5,
+            "radius": 30,
+            "flags": [
+              "fixed"
+            ],
+            "damage": 3,
+            "knockback": 12,
+            "angle": 0,
+            "color": [
+              0.5,
+              1,
+              0.6,
+              1
+            ],
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "airspecial": {
+    "slid": "continue",
+    "cancellable": null,
+    "type": "special",
+    "reversible": true,
+    "iasa": 8,
+    "cost": 0.05,
+    "keyframes": [
+      {
+        "duration": 2,
+        "interpolate": true,
+        "hurtbubbles": [
+          9, 2, 4, 3,
+          -15, 13, 5, 3,
+          -14, 9, 9, 3,
+          1, 18, 13, 3,
+          -4, -2, 4, 3,
+          3, 4, 5, 3
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          9, 2, 4, 3,
+          -15, 13, 5, 3,
+          -14, 9, 9, 3,
+          1, 18, 13, 3,
+          -4, -2, 4, 3,
+          3, 4, 5, 3
+        ]
+      },
+      {
+        "duration": 7,
+        "hurtbubbles": [
+          9, 2, 4, 1,
+          -13, 18, 5, 1,
+          -18, -3, 9, 1,
+          -12, 15, 13, 1,
+          -4, -2, 4, 1,
+          3, 4, 5, 1
+        ]
+      },
+      {
+        "duration": 19,
+        "cancellable": [
+          "airjump"
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_airspecial": {
+    "cancellable": null,
+    "cancel": "continue",
+    "type": "special",
+    "reversible": true,
+    "iasa": 8,
+    "keyframes": [
+      {
+        "duration": 5,
+        "interpolate": true,
+        "hurtbubbles": [
+          9, 2, 4, 3,
+          -15, 13, 5, 3,
+          -14, 9, 9, 3,
+          1, 18, 13, 3,
+          -4, -2, 4, 3,
+          3, 4, 5, 3
+        ]
+      },
+      {
+        "duration": 235,
+        "cancellable": [
+          "sidespecial",
+          "airsidespecial",
+          "hop",
+          "shieldup",
+          "airjump"
+        ],
+        "handler": "chargedAirspecial1Handler",
+        "hurtbubbles": [
+          9, 2, 4, 3,
+          -15, 13, 5, 3,
+          -14, 9, 9, 3,
+          1, 18, 13, 3,
+          -4, -2, 4, 3,
+          3, 4, 5, 3
+        ]
+      },
+      {
+        "duration": 26,
+        "cancellable": [
+          "all"
+        ],
+        "hurtbubbles": [
+          9, 2, 4, 1,
+          -13, 18, 5, 1,
+          -18, -3, 9, 1,
+          -12, 15, 13, 1,
+          -4, -2, 4, 1,
+          3, 4, 5, 1
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "airsidespecial": {
+    "cancellable": null,
+    "cancel": "continue",
+    "slid": "continue",
+    "nodi": true,
+    "noFastfall": true,
+    "type": "special",
+    "cost": 0.2,
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -15, -14, 4, 1,
+          10, 4, 5, 1,
+          8, 10, 9, 1,
+          18, 4, 13, 1,
+          -18, -18, 4, 1,
+          -2, -3, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -15, -14, 4, 1,
+          10, 4, 5, 1,
+          8, 10, 9, 1,
+          18, 4, 13, 1,
+          -18, -18, 4, 1,
+          -2, -3, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          -26, 1, 4, 1,
+          11, -2, 5, 1,
+          12, 13, 9, 1,
+          18, 4, 13, 1,
+          -26, 3, 4, 1,
+          -8, 4, 5, 1
+        ],
+        "audio": "gunpew",
+        "spawn": "spawnOrb"
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          -26, 1, 4, 1,
+          11, 13, 5, 1,
+          12, -2, 9, 1,
+          18, 4, 13, 1,
+          -26, 3, 4, 1,
+          -8, 4, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          -26, 1, 4, 1,
+          11, 13, 5, 1,
+          12, -2, 9, 1,
+          18, 4, 13, 1,
+          -26, 3, 4, 1,
+          -8, 4, 5, 1
+        ]
+      }
+    ]
+  },
+  "airsidespecial2": {
+    "cancellable": null,
+    "cancel": 10,
+    "type": "passive",
+    "noFastfall": true,
+    "gravity": 0.5,
+    "grabDirections": 100,
+    "iasa": 8,
+    "keyframes": [
+      {
+        "duration": 10,
+        "start": "stop",
+        "gravity": 0,
+        "nodi": true,
+        "interpolate": true,
+        "hurtbubbles": [
+          7, -9, 4, 1,
+          9, 14, 5, 1,
+          -8, 10, 9, 1,
+          2, 23, 13, 1,
+          -1, -12, 4, 1,
+          2, 0, 5, 1
+        ]
+      },
+      {
+        "duration": 8,
+        "start": "warp",
+        "hurtbubbles": [
+          7, -9, 4, 1,
+          9, 14, 5, 1,
+          -8, 10, 9, 1,
+          2, 23, 13, 1,
+          -1, -12, 4, 1,
+          2, 0, 5, 1
+        ],
+        "gravity": 0,
+        "nodi": true
+      },
+      {
+        "duration": 14,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          9, 14, 5, 1,
+          -10, 9, 9, 1,
+          -3, 24, 13, 1,
+          -1, -12, 4, 1,
+          2, 3, 5, 1
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          9, 14, 5, 1,
+          -10, 9, 9, 1,
+          -3, 24, 13, 1,
+          -1, -12, 4, 1,
+          2, 3, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "airdownspecial": {
+    "cancellable": null,
+    "cancel": "continue",
+    "attacking": false,
+    "transition": "airdownspecial2",
+    "start": "dsStart",
+    "handler": "dsHandler",
+    "type": "special",
+    "keyframes": [
+      {
+        "duration": 4,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          23, 34, 5, 1,
+          -24, 33, 9, 1,
+          1, 45, 13, 1,
+          -5, 4, 4, 1,
+          0, 29, 5, 1
+        ]
+      },
+      {
+        "duration": 500,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          23, 34, 5, 1,
+          -24, 33, 9, 1,
+          1, 45, 13, 1,
+          -5, 4, 4, 1,
+          0, 29, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "airdownspecial2": {
+    "cancellable": [
+      "all"
+    ],
+    "type": "special",
+    "keyframes": [
+      {
+        "duration": 6,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          8, 20, 5, 1,
+          -20, 11, 9, 1,
+          1, 45, 13, 1,
+          -4, -2, 4, 1,
+          -2, 29, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          8, 20, 5, 1,
+          -20, 11, 9, 1,
+          1, 45, 13, 1,
+          -4, -2, 4, 1,
+          -2, 29, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "airupspecial": {
+    "cancellable": null,
+    "cancel": "continue",
+    "noFastfall": true,
+    "nodi": true,
+    "type": "special",
+    "reversible": true,
+    "grabDirections": 212,
+    "slid": "continue",
+    "transition": "airupspecial2",
+    "start": "airusStart",
+    "handler": "airusHandler",
+    "keyframes": [
+      {
+        "duration": 5,
+        "noLedgeGrab": true,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      },
+      {
+        "duration": 6,
+        "noLedgeGrab": true,
+        "hurtbubbles": [
+          -25, 27, 4, 1,
+          5, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 15, 13, 1,
+          -25, 23, 4, 1,
+          15, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "noLedgeGrab": true,
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "special",
+            "y": 5,
+            "radius": 30,
+            "flags": [
+              "fixed"
+            ],
+            "damage": 3,
+            "knockback": 12,
+            "angle": 0,
+            "color": [
+              0.5,
+              1,
+              0.6,
+              1
+            ],
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -25, 27, 4, 1,
+          5, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 15, 13, 1,
+          -25, 23, 4, 1,
+          25, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -25, 24, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 15, 13, 1,
+          -25, 16, 4, 1,
+          35, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "start": "us5Start",
+        "noLedgeGrab": true,
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "special",
+            "y": 5,
+            "radius": 30,
+            "flags": [
+              "fixed"
+            ],
+            "damage": 3,
+            "knockback": 12,
+            "angle": 0,
+            "color": [
+              0.5,
+              1,
+              0.6,
+              1
+            ],
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "airupspecial2": {
+    "cancellable": null,
+    "cancel": 10,
+    "type": "passive",
+    "grabDirections": 212,
+    "transition": "helpless",
+    "keyframes": [
+      {
+        "duration": 8,
+        "nodi": true,
+        "interpolate": true,
+        "gravity": 0,
+        "hurtbubbles": [
+          5, -4, 4, 1,
+          10, 20, 5, 1,
+          0, 15, 9, 1,
+          2, 30, 13, 1,
+          -2, -4, 4, 1,
+          4, 12, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "start": "airus21Start",
+        "hurtbubbles": [
+          5, -4, 4, 1,
+          10, 20, 5, 1,
+          0, 15, 9, 1,
+          2, 30, 13, 1,
+          -2, -4, 4, 1,
+          4, 12, 5, 1
+        ]
+      },
+      {
+        "duration": 30,
+        "hurtbubbles": [
+          5, 34, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 20, 13, 1,
+          -2, 34, 4, 1,
+          5, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          5, 34, 4, 1,
+          10, 13, 5, 1,
+          0, 15, 9, 1,
+          2, 20, 13, 1,
+          -2, 34, 4, 1,
+          5, 10, 5, 1
+        ]
+      }
+    ]
+  },
+  "jab": {
+    "cancellable": null,
+    "type": "attack",
+    "redirect": {
+      "jab": "jab2"
+    },
+    "bufferable": [
+      "jab"
+    ],
+    "iasa": 16,
+    "keyframes": [
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          18, 18, 5, 1,
+          -1, 26, 9, 1,
+          5, 32, 13, 1,
+          -6, 4, 4, 1,
+          4, 17, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "follow": "lbody",
+            "smear": {
+              "follow": "lbody",
+              "x": 0
+            },
+            "x": 10,
+            "y": 5,
+            "radius": 22,
+            "damage": 2,
+            "knockback": 3,
+            "growth": 5,
+            "sakurai": true,
+            "audio": "highhit",
+            "next": true
+          }
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          27, 22, 5, 1,
+          4, 27, 9, 1,
+          8, 33, 13, 1,
+          -6, 4, 4, 1,
+          11, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "cancellable": [
+          "jab"
+        ]
+      },
+      {
+        "duration": 16,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "jab2": {
+    "cancellable": null,
+    "type": "attack",
+    "iasa": 16,
+    "keyframes": [
+      {
+        "duration": 6,
+        "interpolate": true,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          20, 25, 5, 1,
+          0, 25, 9, 1,
+          11, 30, 13, 1,
+          -6, 4, 4, 1,
+          11, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          30, 22, 5, 1,
+          16, 28, 9, 1,
+          31, 31, 13, 1,
+          -6, 4, 4, 1,
+          17, 16, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "follow": "head",
+            "smear": {
+              "follow": "head",
+              "x": 10
+            },
+            "x": 5,
+            "y": 0,
+            "radius": 22,
+            "damage": 4,
+            "knockback": 7,
+            "growth": 7,
+            "sakurai": true,
+            "audio": "highhit",
+            "next": true
+          }
+        ]
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          34, 19, 5, 1,
+          23, 28, 9, 1,
+          37, 32, 13, 1,
+          -6, 4, 4, 1,
+          27, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 12,
+        "cancellable": [
+          "jab"
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "dashattack": {
+    "cancellable": null,
+    "type": "attack",
+    "friction": 0,
+    "start": "stop",
+    "end": "stop",
+    "slideFriction": 0.94,
+    "iasa": 4,
+    "events": [
+      {
+        "effect": "glow",
+        "follow": "rbody",
+        "when": "hitbubbles"
+      }
+    ],
+    "keyframes": [
+      {
+        "duration": 5,
+        "cancellable": [
+          "utap",
+          "hop",
+          "grab"
+        ],
+        "slide": 5,
+        "interpolate": true,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          5, 33, 5, 1,
+          -4, 23, 9, 1,
+          -9, 39, 13, 1,
+          -5, 4, 4, 1,
+          5, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 11,
+        "slide": 3.2,
+        "hurtbubbles": [
+          10, 4, 4, 1,
+          5, 33, 5, 1,
+          -4, 23, 9, 1,
+          -9, 39, 13, 1,
+          -5, 4, 4, 1,
+          5, 20, 5, 1
+        ],
+        "audio": "longwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "smear": {
+              "x": -5,
+              "y": 18
+            },
+            "next": true,
+            "x": 24,
+            "y": 18,
+            "radius": 22,
+            "damage": 6.5,
+            "knockback": 4,
+            "growth": 18,
+            "angle": 84
+          }
+        ]
+      },
+      {
+        "duration": 22,
+        "hurtbubbles": [
+          25, 4, 4, 1,
+          20, 18, 5, 1,
+          14, 27, 9, 1,
+          30, 29, 13, 1,
+          -5, 4, 4, 1,
+          4, 16, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "dtilt": {
+    "cancellable": null,
+    "transition": "crouched",
+    "type": "attack",
+    "iasa": 10,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 7,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          3, 13, 5, 1,
+          -9, 9, 9, 1,
+          -4, 23, 13, 1,
+          -6, 4, 4, 1,
+          2, 9, 5, 1
+        ],
+        "tween": "quadOut"
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          3, 13, 5, 1,
+          -9, 9, 9, 1,
+          -4, 23, 13, 1,
+          -6, 4, 4, 1,
+          2, 9, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "follow": "rleg",
+            "smear": true,
+            "x": 0,
+            "y": 15,
+            "radius": 20,
+            "damage": 7,
+            "knockback": 15,
+            "angle": 20
+          }
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          51, 12, 4, 1,
+          35, 10, 5, 1,
+          20, 10, 9, 1,
+          25, 20, 13, 1,
+          -6, 4, 4, 1,
+          26, 6, 5, 1
+        ],
+        "hitbubbles": true
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          62, 4, 4, 1,
+          41, 8, 5, 1,
+          25, 11, 9, 1,
+          38, 19, 13, 1,
+          -6, 4, 4, 1,
+          33, 6, 5, 1
+        ],
+        "tween": "quadIn"
+      },
+      {
+        "duration": 9,
+        "hurtbubbles": [
+          57, 4, 4, 1,
+          41, 7, 5, 1,
+          24, 13, 9, 1,
+          36, 22, 13, 1,
+          -6, 4, 4, 1,
+          32, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          40, 4, 4, 1,
+          31, 7, 5, 1,
+          10, 15, 9, 1,
+          24, 22, 13, 1,
+          -6, 4, 4, 1,
+          18, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          12, 4, 4, 1,
+          10, 10, 5, 1,
+          0, 12, 9, 1,
+          3, 24, 13, 1,
+          -6, 4, 4, 1,
+          5, 10, 5, 1
+        ]
+      }
+    ]
+  },
+  "ftilt": {
+    "cancellable": null,
+    "type": "attack",
+    "keyframes": [
+      {
+        "duration": 11,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          42, 8, 4, 1,
+          0, 13, 5, 1,
+          14, 25, 9, 1,
+          4, 25, 13, 1,
+          45, 35, 4, 1,
+          0, 5, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          42, 8, 4, 1,
+          0, 20, 5, 1,
+          14, 25, 9, 1,
+          4, 25, 13, 1,
+          45, 20, 4, 1,
+          0, 5, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "follow": "lleg",
+            "smear": true,
+            "end": 1,
+            "x": 5,
+            "y": 0,
+            "radius": 13,
+            "damage": 16,
+            "knockback": 3,
+            "growth": 15.25,
+            "angle": 40,
+            "audio": {
+              "name": "slap",
+              "pitch": 0.8
+            }
+          },
+          {
+            "type": "ground",
+            "follow": "head",
+            "smear": {
+              "follow": "head",
+              "x": 0
+            },
+            "x": 20,
+            "y": 0,
+            "radius": 17,
+            "damage": 10,
+            "knockback": 3,
+            "growth": 15.25,
+            "angle": 40
+          }
+        ]
+      },
+      {
+        "duration": 16,
+        "hurtbubbles": [
+          20, 6, 4, 1,
+          0, 13, 5, 1,
+          7, 15, 9, 1,
+          -4, 25, 13, 1,
+          25, 8, 4, 1,
+          0, 5, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "follow": "head",
+            "smear": true,
+            "end": 5,
+            "x": 15,
+            "y": -5,
+            "radius": 18,
+            "damage": 8,
+            "knockback": 3,
+            "growth": 14,
+            "angle": 40
+          }
+        ]
+      },
+      {
+        "duration": 18,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ],
+    "iasa": 4
+  },
+  "utilt": {
+    "cancellable": null,
+    "type": "attack",
+    "iasa": 6,
+    "nodi": true,
+    "keyframes": [
+      {
+        "duration": 2,
+        "interpolate": true,
+        "hurtbubbles": [
+          24, 4, 4, 1,
+          14, 12, 5, 1,
+          3, 18, 9, 1,
+          -1, 23, 13, 1,
+          -5, 4, 4, 1,
+          4, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          24, 4, 4, 1,
+          14, 12, 5, 1,
+          3, 18, 9, 1,
+          -1, 23, 13, 1,
+          -5, 4, 4, 1,
+          4, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          33, 4, 4, 1,
+          17, 6, 5, 1,
+          5, 17, 9, 1,
+          0, 22, 13, 1,
+          -5, 4, 4, 1,
+          5, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          43, 18, 4, 1,
+          21, 7, 5, 1,
+          0, 18, 9, 1,
+          2, 23, 13, 1,
+          -5, 4, 4, 1,
+          6, 8, 5, 1
+        ],
+        "audio": "longwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "flags": "stale_di",
+            "follow": "rleg",
+            "smear": true,
+            "x": 10,
+            "radius": 14,
+            "damage": 7,
+            "knockback": 6,
+            "growth": 20,
+            "angle": 77
+          }
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          32, 48, 4, 1,
+          18, 19, 5, 1,
+          -3, 19, 9, 1,
+          4, 32, 13, 1,
+          -5, 4, 4, 1,
+          4, 12, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "flags": "stale_di",
+            "follow": "rleg",
+            "smear": true,
+            "x": 10,
+            "radius": 14,
+            "damage": 6,
+            "knockback": 2,
+            "growth": 23,
+            "angle": 80
+          }
+        ],
+        "tween": "quadOut"
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          12, 78, 4, 1,
+          16, 25, 5, 1,
+          -7, 17, 9, 1,
+          -4, 33, 13, 1,
+          -5, 4, 4, 1,
+          3, 17, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "flags": "stale_di",
+            "follow": "rleg",
+            "smear": true,
+            "next": true,
+            "x": 10,
+            "radius": 14,
+            "damage": 4,
+            "knockback": 1,
+            "growth": 25,
+            "angle": 88,
+            "audio": "highhit"
+          }
+        ],
+        "tween": "quadIn"
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          -8, 56, 4, 1,
+          9, 27, 5, 1,
+          -9, 13, 9, 1,
+          -8, 31, 13, 1,
+          -5, 4, 4, 1,
+          1, 15, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -7, 35, 4, 1,
+          9, 27, 5, 1,
+          -11, 12, 9, 1,
+          -8, 30, 13, 1,
+          -5, 4, 4, 1,
+          1, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          2, 4, 4, 1,
+          9, 21, 5, 1,
+          -10, 16, 9, 1,
+          -2, 29, 13, 1,
+          -5, 4, 4, 1,
+          0, 15, 5, 1
+        ],
+        "tween": "quadIn"
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          4, 4, 4, 1,
+          12, 22, 5, 1,
+          -6, 25, 9, 1,
+          5, 36, 13, 1,
+          -6, 4, 4, 1,
+          1, 15, 5, 1
+        ]
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_ftap": {
+    "cancellable": null,
+    "transition": "charged_ftap-charge",
+    "type": "attack",
+    "friction": 0,
+    "keyframes": [
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          -13, 9, 4, 1,
+          -21, 24, 5, 1,
+          -19, 31, 9, 1,
+          -8, 35, 13, 1,
+          -2, 4, 4, 1,
+          -6, 22, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          -13, 9, 4, 1,
+          -21, 24, 5, 1,
+          -19, 31, 9, 1,
+          -8, 35, 13, 1,
+          -2, 4, 4, 1,
+          -6, 22, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -22, 4, 4, 1,
+          -26, 22, 5, 1,
+          -24, 30, 9, 1,
+          -18, 35, 13, 1,
+          -2, 4, 4, 1,
+          -18, 24, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_ftap-charge": {
+    "cancellable": null,
+    "handler": "charge",
+    "release": "charged_ftap-release",
+    "transition": "charged_ftap-release",
+    "type": "attack",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -22, 4, 4, 1,
+          -26, 22, 5, 1,
+          -24, 30, 9, 1,
+          -18, 35, 13, 1,
+          -2, 4, 4, 1,
+          -18, 24, 5, 1
+        ]
+      },
+      {
+        "duration": 85,
+        "audio": "charging"
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -22, 4, 4, 1,
+          -29, 23, 5, 1,
+          -27, 30, 9, 1,
+          -21, 33, 13, 1,
+          -2, 4, 4, 1,
+          -18, 24, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_ftap-release": {
+    "cancellable": null,
+    "type": "attack",
+    "iasa": 8,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 3,
+        "hurtbubbles": [
+          18, 4, 4, 1,
+          50, 20, 5, 1,
+          37, 27, 9, 1,
+          66, 26, 13, 1,
+          -2, 4, 4, 1,
+          15, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "follow": "head",
+            "smear": true,
+            "x": -10,
+            "radius": 25,
+            "damage": 15,
+            "knockback": 5,
+            "growth": 13,
+            "sakurai": true,
+            "audio": {
+              "name": "slap",
+              "pitch": 0.8
+            }
+          }
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          18, 4, 4, 1,
+          50, 20, 5, 1,
+          37, 27, 9, 1,
+          66, 26, 13, 1,
+          -2, 4, 4, 1,
+          15, 14, 5, 1
+        ],
+        "tween": "quadOut"
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          18, 4, 4, 1,
+          36, 30, 5, 1,
+          29, 39, 9, 1,
+          28, 33, 13, 1,
+          -2, 4, 4, 1,
+          7, 18, 5, 1
+        ]
+      },
+      {
+        "duration": 13,
+        "hurtbubbles": [
+          26, 4, 4, 1,
+          29, 27, 5, 1,
+          12, 30, 9, 1,
+          21, 43, 13, 1,
+          -2, 4, 4, 1,
+          13, 19, 5, 1
+        ],
+        "dx": 1
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "utap": {
+    "cancellable": null,
+    "transition": "utap-charge",
+    "type": "attack",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          15, 4, 4, 1,
+          20, 13, 5, 1,
+          6, 22, 9, 1,
+          11, 38, 13, 1,
+          -10, 4, 4, 1,
+          9, 13, 5, 1
+        ]
+      }
+    ]
+  },
+  "utap-charge": {
+    "cancellable": null,
+    "handler": "charge",
+    "transition": "utap-release",
+    "release": "utap-release",
+    "type": "attack",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          15, 4, 4, 1,
+          20, 13, 5, 1,
+          6, 22, 9, 1,
+          11, 38, 13, 1,
+          -10, 4, 4, 1,
+          9, 13, 5, 1
+        ]
+      },
+      {
+        "duration": 85,
+        "audio": "charging"
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          15, 4, 4, 1,
+          21, 12, 5, 1,
+          6, 17, 9, 1,
+          14, 28, 13, 1,
+          -10, 4, 4, 1,
+          10, 9, 5, 1
+        ]
+      }
+    ]
+  },
+  "utap-release": {
+    "cancellable": null,
+    "type": "attack",
+    "iasa": 8,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 3,
+        "hurtbubbles": [
+          15, 4, 4, 1,
+          21, 11, 5, 1,
+          5, 15, 9, 1,
+          14, 28, 13, 1,
+          -10, 4, 4, 1,
+          10, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          15, 4, 4, 1,
+          21, 11, 5, 1,
+          5, 15, 9, 1,
+          14, 28, 13, 1,
+          -10, 4, 4, 1,
+          10, 7, 5, 1
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          15, 4, 4, 1,
+          26, 40, 5, 1,
+          12, 41, 9, 1,
+          6, 64, 13, 1,
+          -10, 4, 4, 1,
+          19, 31, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "flags": "stale_di",
+            "smear": true,
+            "follow": "head",
+            "x": 0,
+            "y": 0,
+            "radius": 20,
+            "damage": 7,
+            "knockback": 16,
+            "growth": 7,
+            "angle": 90
+          },
+          {
+            "type": "ground",
+            "flags": "stale_di",
+            "follow": "rbody2",
+            "smear": true,
+            "x": 5,
+            "y": 0,
+            "radius": 20,
+            "damage": 7,
+            "knockback": 16,
+            "growth": 7,
+            "angle": 90
+          }
+        ]
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          15, 4, 4, 1,
+          26, 37, 5, 1,
+          12, 39, 9, 1,
+          6, 59, 13, 1,
+          -10, 4, 4, 1,
+          19, 29, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          6, 27, 5, 1,
+          -6, 25, 9, 1,
+          7, 40, 13, 1,
+          -10, 4, 4, 1,
+          3, 18, 5, 1
+        ]
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "dtap": {
+    "cancellable": null,
+    "transition": "dtap-charge",
+    "release": "dtap-release",
+    "type": "attack",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 4,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          -16, 17, 5, 1,
+          -9, 23, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -1, 13, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          -16, 17, 5, 1,
+          -9, 23, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -1, 13, 5, 1
+        ]
+      }
+    ]
+  },
+  "dtap-charge": {
+    "cancellable": null,
+    "handler": "charge",
+    "transition": "dtap-release",
+    "release": "dtap-release",
+    "type": "attack",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          -16, 17, 5, 1,
+          -9, 23, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -1, 13, 5, 1
+        ]
+      },
+      {
+        "duration": 85,
+        "audio": "charging"
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          -20, 14, 5, 1,
+          -15, 20, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -7, 14, 5, 1
+        ]
+      }
+    ]
+  },
+  "dtap-release": {
+    "cancellable": null,
+    "type": "attack",
+    "iasa": 7,
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 2,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          -20, 14, 5, 1,
+          -15, 20, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -7, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          -20, 14, 5, 1,
+          -15, 20, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -7, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          -20, 14, 5, 1,
+          -15, 20, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -7, 14, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "follow": "rleg",
+            "y": 5,
+            "x": 0,
+            "radius": 12,
+            "damage": 3,
+            "knockback": 5,
+            "angle": 180,
+            "audio": "highhit",
+            "next": true
+          },
+          {
+            "type": "ground",
+            "y": 9,
+            "x": 10,
+            "radius": 22,
+            "damage": 3,
+            "knockback": 5,
+            "angle": 180,
+            "audio": "highhit",
+            "next": true
+          }
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          60, 21, 4, 1,
+          16, 10, 5, 1,
+          -13, 12, 9, 1,
+          -2, 29, 13, 1,
+          4, 4, 4, 1,
+          8, 18, 5, 1
+        ]
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          13, 8, 4, 1,
+          -4, 10, 5, 1,
+          -15, 10, 9, 1,
+          -5, 26, 13, 1,
+          4, 4, 4, 1,
+          -1, 15, 5, 1
+        ]
+      },
+      {
+        "reset": true,
+        "duration": 2,
+        "audio": "shortwhiff",
+        "hurtbubbles": [
+          -7, 22, 4, 1,
+          -24, 14, 5, 1,
+          -15, 9, 9, 1,
+          -6, 26, 13, 1,
+          4, 4, 4, 1,
+          -2, 15, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "follow": "rleg",
+            "y": 5,
+            "x": 0,
+            "radius": 12,
+            "damage": 10,
+            "knockback": 11,
+            "growth": 8,
+            "sakurai": true,
+            "next": true
+          },
+          {
+            "type": "ground",
+            "y": 15,
+            "x": 10,
+            "radius": 22,
+            "damage": 10,
+            "knockback": 11,
+            "growth": 8,
+            "sakurai": true,
+            "next": true
+          }
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          65, 7, 4, 1,
+          15, 14, 5, 1,
+          -19, 7, 9, 1,
+          -9, 24, 13, 1,
+          4, 4, 4, 1,
+          -1, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          56, 4, 4, 1,
+          7, 11, 5, 1,
+          -13, 9, 9, 1,
+          -11, 20, 13, 1,
+          4, 4, 4, 1,
+          -2, 8, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          24, 4, 4, 1,
+          -10, 10, 5, 1,
+          -13, 14, 9, 1,
+          -2, 23, 13, 1,
+          4, 4, 4, 1,
+          4, 17, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          24, 4, 4, 1,
+          -4, 14, 5, 1,
+          0, 23, 9, 1,
+          19, 32, 13, 1,
+          -8, 4, 4, 1,
+          11, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "ftap": {
+    "cancellable": null,
+    "transition": "ftap-charge",
+    "type": "attack",
+    "friction": 0,
+    "keyframes": [
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          -13, 9, 4, 1,
+          -16, 23, 5, 1,
+          3, 23, 9, 1,
+          -8, 35, 13, 1,
+          -2, 4, 4, 1,
+          -6, 19, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -22, 4, 4, 1,
+          -32, 27, 5, 1,
+          -12, 24, 9, 1,
+          -18, 35, 13, 1,
+          -2, 4, 4, 1,
+          -24, 20, 5, 1
+        ]
+      }
+    ]
+  },
+  "ftap-charge": {
+    "cancellable": null,
+    "handler": "charge",
+    "release": "ftap-release",
+    "transition": "ftap-release",
+    "type": "attack",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -22, 4, 4, 1,
+          -32, 27, 5, 1,
+          -12, 24, 9, 1,
+          -18, 35, 13, 1,
+          -2, 4, 4, 1,
+          -24, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 85,
+        "audio": "charging"
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -22, 4, 4, 1,
+          -38, 24, 5, 1,
+          -19, 28, 9, 1,
+          -34, 33, 13, 1,
+          -2, 4, 4, 1,
+          -25, 19, 5, 1
+        ]
+      }
+    ]
+  },
+  "ftap-release": {
+    "cancellable": null,
+    "type": "attack",
+    "iasa": 8,
+    "events": [
+      {
+        "effect": "glow",
+        "follow": "rleg",
+        "start": 3,
+        "end": 20
+      }
+    ],
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 6,
+        "slide": -8,
+        "hurtbubbles": [
+          -6, 37, 4, 1,
+          -24, 29, 5, 1,
+          -4, 26, 9, 1,
+          -11, 39, 13, 1,
+          22, 4, 4, 1,
+          -18, 22, 5, 1
+        ]
+      },
+      {
+        "duration": 6,
+        "slide": 16,
+        "audio": "longwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "follow": "rleg",
+            "y": 4,
+            "radius": 20,
+            "damage": 8,
+            "knockback": 12,
+            "growth": 4,
+            "angle": 45
+          }
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          65, 5, 4, 1,
+          43, 35, 5, 1,
+          25, 24, 9, 1,
+          30, 32, 13, 1,
+          0, 4, 4, 1,
+          15, 37, 5, 1
+        ],
+        "hitbubbles": true
+      },
+      {
+        "duration": 5
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          71, 5, 4, 1,
+          69, 27, 5, 1,
+          45, 25, 9, 1,
+          50, 33, 13, 1,
+          0, 4, 4, 1,
+          36, 35, 5, 1
+        ],
+        "reset": true,
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "follow": "rleg",
+            "smear": true,
+            "y": 10,
+            "radius": 20,
+            "damage": 15,
+            "knockback": 5,
+            "growth": 19,
+            "angle": 50,
+            "audio": "wham"
+          }
+        ],
+        "dx": 2
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          81, 10, 4, 1,
+          67, 33, 5, 1,
+          43, 25, 9, 1,
+          47, 35, 13, 1,
+          0, 4, 4, 1,
+          35, 33, 5, 1
+        ],
+        "hitbubbles": true
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          63, 29, 4, 1,
+          52, 44, 5, 1,
+          40, 26, 9, 1,
+          42, 37, 13, 1,
+          0, 4, 4, 1,
+          29, 36, 5, 1
+        ],
+        "hitbubbles": true
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          39, 34, 4, 1,
+          20, 46, 5, 1,
+          31, 25, 9, 1,
+          24, 35, 13, 1,
+          0, 4, 4, 1,
+          15, 29, 5, 1
+        ]
+      },
+      {
+        "duration": 16,
+        "hurtbubbles": [
+          18, 4, 4, 1,
+          3, 23, 5, 1,
+          21, 23, 9, 1,
+          12, 37, 13, 1,
+          0, 4, 4, 1,
+          14, 17, 5, 1
+        ],
+        "speed": 1
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_utap": {
+    "cancellable": null,
+    "transition": "charged_utap-charge",
+    "type": "attack",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          38, 4, 4, 1,
+          31, 15, 5, 1,
+          12, 22, 9, 1,
+          23, 31, 13, 1,
+          -10, 4, 4, 1,
+          20, 15, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          38, 4, 4, 1,
+          31, 15, 5, 1,
+          12, 22, 9, 1,
+          23, 31, 13, 1,
+          -10, 4, 4, 1,
+          20, 15, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_utap-charge": {
+    "cancellable": null,
+    "handler": "charge",
+    "transition": "charged_utap-release",
+    "release": "charged_utap-release",
+    "type": "attack",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          38, 4, 4, 1,
+          31, 15, 5, 1,
+          12, 22, 9, 1,
+          23, 31, 13, 1,
+          -10, 4, 4, 1,
+          20, 15, 5, 1
+        ]
+      },
+      {
+        "duration": 85,
+        "audio": "charging"
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          38, 4, 4, 1,
+          32, 11, 5, 1,
+          12, 21, 9, 1,
+          24, 26, 13, 1,
+          -10, 4, 4, 1,
+          20, 11, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_utap-release": {
+    "cancellable": null,
+    "type": "attack",
+    "iasa": 4,
+    "events": [
+      {
+        "effect": "glow",
+        "follow": "rbody",
+        "when": "hitbubbles"
+      },
+      {
+        "effect": "glow",
+        "follow": "head",
+        "when": "hitbubbles"
+      }
+    ],
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 4,
+        "hurtbubbles": [
+          38, 4, 4, 1,
+          32, 11, 5, 1,
+          12, 21, 9, 1,
+          25, 25, 13, 1,
+          -10, 4, 4, 1,
+          20, 9, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          38, 4, 4, 1,
+          32, 11, 5, 1,
+          12, 21, 9, 1,
+          25, 25, 13, 1,
+          -10, 4, 4, 1,
+          20, 9, 5, 1
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          33, 4, 4, 1,
+          28, 17, 5, 1,
+          9, 23, 9, 1,
+          22, 29, 13, 1,
+          -10, 4, 4, 1,
+          18, 12, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "x": 14,
+            "y": 14,
+            "radius": 14,
+            "damage": 3,
+            "knockback": 5,
+            "angle": 180,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          26, 4, 4, 1,
+          24, 21, 5, 1,
+          5, 27, 9, 1,
+          16, 33, 13, 1,
+          -10, 4, 4, 1,
+          13, 15, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "reset": true,
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "x": 14,
+            "y": 28,
+            "radius": 17,
+            "damage": 3,
+            "knockback": 5,
+            "angle": 180,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 4,
+        "hurtbubbles": [
+          21, 4, 4, 1,
+          20, 38, 5, 1,
+          4, 37, 9, 1,
+          14, 50, 13, 1,
+          -10, 4, 4, 1,
+          11, 28, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "reset": true,
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "x": 14,
+            "y": 42,
+            "radius": 20,
+            "damage": 3,
+            "knockback": 5,
+            "angle": 180,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          14, 25, 4, 1,
+          30, 67, 5, 1,
+          5, 62, 9, 1,
+          16, 76, 13, 1,
+          -10, 4, 4, 1,
+          13, 52, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "reset": true,
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "x": 14,
+            "y": 66,
+            "radius": 23,
+            "damage": 3,
+            "knockback": 5,
+            "angle": 180,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 2,
+        "reset": true,
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "x": 20,
+            "y": 33,
+            "radius": 30,
+            "damage": 7,
+            "knockback": 10,
+            "growth": 16,
+            "angle": 75,
+            "audio": "wham"
+          },
+          {
+            "type": "ground",
+            "x": 14,
+            "y": 60,
+            "radius": 30,
+            "damage": 7,
+            "knockback": 10,
+            "growth": 16,
+            "angle": 75,
+            "audio": "wham"
+          }
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          25, 15, 4, 1,
+          22, 35, 5, 1,
+          8, 44, 9, 1,
+          21, 49, 13, 1,
+          -8, 13, 4, 1,
+          10, 32, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          23, 4, 4, 1,
+          28, 16, 5, 1,
+          14, 34, 9, 1,
+          28, 30, 13, 1,
+          -5, 20, 4, 1,
+          9, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 24,
+        "hurtbubbles": [
+          23, 4, 4, 1,
+          25, 10, 5, 1,
+          11, 20, 9, 1,
+          25, 20, 13, 1,
+          -5, 4, 4, 1,
+          8, 10, 5, 1
+        ],
+        "tween": "quadOut"
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_dtap": {
+    "cancellable": null,
+    "transition": "charged_dtap-charge",
+    "release": "charged_dtap-release",
+    "type": "attack",
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 4,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          6, 13, 5, 1,
+          -12, 16, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -1, 9, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          6, 13, 5, 1,
+          -12, 16, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -1, 9, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_dtap-charge": {
+    "cancellable": null,
+    "handler": "charge",
+    "transition": "charged_dtap-release",
+    "release": "charged_dtap-release",
+    "type": "attack",
+    "keyframes": [
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          6, 13, 5, 1,
+          -12, 16, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -1, 9, 5, 1
+        ]
+      },
+      {
+        "duration": 85,
+        "audio": "charging"
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          6, 13, 5, 1,
+          -12, 16, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -1, 9, 5, 1
+        ]
+      }
+    ]
+  },
+  "charged_dtap-release": {
+    "cancellable": null,
+    "type": "attack",
+    "iasa": 4,
+    "events": [
+      {
+        "effect": "glow",
+        "follow": "lleg",
+        "when": "hitbubbles"
+      },
+      {
+        "effect": "glow",
+        "follow": "rleg",
+        "when": "hitbubbles"
+      }
+    ],
+    "keyframes": [
+      {
+        "interpolate": true,
+        "duration": 4,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          6, 13, 5, 1,
+          -11, 20, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -1, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          -10, 4, 4, 1,
+          6, 13, 5, 1,
+          -11, 20, 9, 1,
+          0, 28, 13, 1,
+          4, 4, 4, 1,
+          -1, 11, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "ground",
+            "y": 20,
+            "x": 30,
+            "radius": 25,
+            "damage": 12,
+            "knockback": 5,
+            "growth": 16,
+            "angle": 88
+          },
+          {
+            "type": "ground",
+            "y": 20,
+            "x": -30,
+            "radius": 25,
+            "damage": 12,
+            "knockback": 5,
+            "growth": 16,
+            "angle": 88
+          }
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          40, 10, 4, 1,
+          6, 13, 5, 1,
+          -8, 14, 9, 1,
+          -5, 23, 13, 1,
+          -40, 8, 4, 1,
+          -5, 8, 5, 1
+        ],
+        "hitbubbles": true
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          20, 4, 4, 1,
+          8, 12, 5, 1,
+          1, 14, 9, 1,
+          10, 26, 13, 1,
+          -20, 4, 4, 1,
+          4, 9, 5, 1
+        ]
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          20, 4, 4, 1,
+          6, 13, 5, 1,
+          0, 15, 9, 1,
+          6, 28, 13, 1,
+          -5, 4, 4, 1,
+          4, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          6, 4, 4, 1,
+          12, 32, 5, 1,
+          -4, 34, 9, 1,
+          4, 51, 13, 1,
+          -6, 4, 4, 1,
+          0, 26, 5, 1
+        ]
+      }
+    ]
+  },
+  "nair": {
+    "cancellable": null,
+    "cancel": 10,
+    "type": "aerial",
+    "iasa": 10,
+    "early": 6,
+    "late": 16,
+    "events": [
+      {
+        "effect": "glow",
+        "follow": "lleg",
+        "when": "hitbubbles"
+      },
+      {
+        "effect": "glow",
+        "follow": "rleg",
+        "when": "hitbubbles"
+      }
+    ],
+    "keyframes": [
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          -10, 5, 4, 1,
+          -6, 22, 5, 1,
+          11, 22, 9, 1,
+          2, 28, 13, 1,
+          10, 5, 4, 1,
+          4, 14, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          -10, 5, 4, 1,
+          -6, 22, 5, 1,
+          11, 22, 9, 1,
+          2, 28, 13, 1,
+          10, 5, 4, 1,
+          4, 14, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          30, 17, 4, 1,
+          10, 17, 5, 1,
+          -2, 11, 9, 1,
+          2, 28, 13, 1,
+          -10, 17, 4, 1,
+          5, 20, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "smear": {
+              "x": 0,
+              "y": 16
+            },
+            "x": 30,
+            "y": 16,
+            "radius": 19,
+            "damage": 6,
+            "knockback": 5,
+            "growth": 10,
+            "angle": 120,
+            "addVelocity": 2
+          }
+        ]
+      },
+      {
+        "duration": 9,
+        "reset": true,
+        "repeat": 3,
+        "hurtbubbles": [
+          -30, 17, 4, 1,
+          -2, 9, 5, 1,
+          10, 10, 9, 1,
+          2, 28, 13, 1,
+          30, 17, 4, 1,
+          5, 20, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "follow": "rleg",
+            "smear": true,
+            "radius": 14,
+            "damage": 3,
+            "knockback": 10,
+            "angle": 120,
+            "addVelocity": 2,
+            "audio": "highhit"
+          },
+          {
+            "type": "aerial",
+            "follow": "lleg",
+            "smear": true,
+            "radius": 14,
+            "damage": 3,
+            "knockback": 10,
+            "angle": 120,
+            "addVelocity": 2,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          30, 17, 4, 1,
+          10, 17, 5, 1,
+          -5, 10, 9, 1,
+          2, 28, 13, 1,
+          -30, 17, 4, 1,
+          5, 20, 5, 1
+        ],
+        "reset": true,
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "follow": "rleg",
+            "next": true,
+            "smear": true,
+            "radius": 17,
+            "damage": 7,
+            "knockback": 2,
+            "growth": 21,
+            "angle": 45,
+            "addVelocity": 1
+          },
+          {
+            "type": "aerial",
+            "follow": "lleg",
+            "next": true,
+            "smear": true,
+            "radius": 17,
+            "damage": 7,
+            "knockback": 2,
+            "growth": 21,
+            "angle": 45,
+            "addVelocity": 1
+          }
+        ]
+      },
+      {
+        "duration": 20,
+        "hurtbubbles": [
+          -20, 20, 4, 1,
+          -2, 10, 5, 1,
+          10, 10, 9, 1,
+          2, 28, 13, 1,
+          15, 19, 4, 1,
+          5, 20, 5, 1
+        ]
+      },
+      {
+        "duration": 10,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "fair": {
+    "cancellable": null,
+    "cancel": 9,
+    "type": "aerial",
+    "early": 5,
+    "late": 8,
+    "iasa": 8,
+    "keyframes": [
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          8, 10, 4, 1,
+          -16, 14, 5, 1,
+          0, 11, 9, 1,
+          -3, 17, 13, 1,
+          -3, -8, 4, 1,
+          -10, 2, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 1,
+        "audio": "shortwhiff",
+        "hurtbubbles": [
+          8, 10, 4, 1,
+          -16, 14, 5, 1,
+          0, 11, 9, 1,
+          -3, 17, 13, 1,
+          -3, -8, 4, 1,
+          -10, 2, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "follow": "rleg",
+            "smear": true,
+            "x": -10,
+            "y": 0,
+            "radius": 20,
+            "damage": 13,
+            "knockback": 0,
+            "growth": 18,
+            "angle": 60
+          }
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          18, 19, 4, 1,
+          1, 23, 5, 1,
+          -8, 9, 9, 1,
+          3, 11, 13, 1,
+          -17, -7, 4, 1,
+          -3, -1, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "follow": "rleg",
+            "smear": {
+              "follow": "rleg",
+              "x": -15,
+              "y": -15
+            },
+            "x": -3,
+            "y": 0,
+            "radius": 20,
+            "damage": 13,
+            "knockback": 0,
+            "growth": 18,
+            "angle": 60
+          }
+        ],
+        "tween": "quadIn"
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          51, 4, 4, 1,
+          20, 3, 5, 1,
+          -8, 10, 9, 1,
+          7, 12, 13, 1,
+          -17, -5, 4, 1,
+          4, -1, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "follow": "rleg",
+            "smear": {
+              "follow": "rleg",
+              "x": 20,
+              "y": -15
+            },
+            "x": 0,
+            "y": 0,
+            "radius": 14,
+            "damage": 17,
+            "knockback": 0,
+            "growth": 18,
+            "angle": 85,
+            "audio": {
+              "name": "slap",
+              "pitch": 0.8
+            }
+          },
+          {
+            "type": "aerial",
+            "follow": "rbody",
+            "smear": {
+              "follow": "rbody",
+              "x": 10,
+              "y": -10
+            },
+            "x": -10,
+            "y": 0,
+            "radius": 20,
+            "damage": 10,
+            "knockback": 3,
+            "growth": 13,
+            "angle": 60
+          }
+        ]
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          51, 4, 4, 1,
+          20, 3, 5, 1,
+          -8, 10, 9, 1,
+          7, 12, 13, 1,
+          -17, -5, 4, 1,
+          4, -1, 5, 1
+        ],
+        "tween": "quartOut"
+      },
+      {
+        "duration": 8,
+        "hurtbubbles": [
+          19, -5, 4, 1,
+          16, 6, 5, 1,
+          -5, 11, 9, 1,
+          8, 13, 13, 1,
+          -19, -1, 4, 1,
+          4, -1, 5, 1
+        ]
+      },
+      {
+        "duration": 9,
+        "hurtbubbles": [
+          8, -9, 4, 1,
+          22, -6, 5, 1,
+          -5, 11, 9, 1,
+          7, 12, 13, 1,
+          -19, -1, 4, 1,
+          4, -1, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          15, -20, 4, 1,
+          5, 2, 5, 1,
+          -8, 1, 9, 1,
+          2, 16, 13, 1,
+          -5, -28, 4, 1,
+          2, -10, 5, 1
+        ]
+      }
+    ]
+  },
+  "bair": {
+    "cancellable": null,
+    "cancel": 7,
+    "type": "aerial",
+    "early": 2,
+    "late": 8,
+    "iasa": 8,
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          -40, 16, 4, 1,
+          12, 3, 5, 1,
+          1, 26, 9, 1,
+          15, 15, 13, 1,
+          -37, 13, 4, 1,
+          0, 11, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          -40, 16, 4, 1,
+          12, 3, 5, 1,
+          1, 26, 9, 1,
+          15, 15, 13, 1,
+          -37, 13, 4, 1,
+          0, 11, 5, 1
+        ],
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "flags": "stale_di",
+            "follow": "rleg",
+            "x": 5,
+            "y": -5,
+            "smear": true,
+            "radius": 18,
+            "damage": 5,
+            "knockback": 14,
+            "growth": 8,
+            "angle": 70,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          -10, 40, 4, 1,
+          -1, 8, 5, 1,
+          13, 16, 9, 1,
+          10, 8, 13, 1,
+          -14, 38, 4, 1,
+          5, 23, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "follow": "rleg",
+            "smear": {
+              "follow": "rleg",
+              "x": 5,
+              "y": -5
+            },
+            "radius": 19,
+            "damage": 5,
+            "knockback": 8,
+            "growth": 8,
+            "angle": 0,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 1,
+        "hurtbubbles": [
+          29, 12, 4, 1,
+          5, 35, 5, 1,
+          -7, 23, 9, 1,
+          2, 15, 13, 1,
+          35, 13, 4, 1,
+          6, 24, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "follow": "rleg",
+            "x": 15,
+            "smear": {
+              "follow": "rleg",
+              "x": 0
+            },
+            "next": true,
+            "radius": 14,
+            "damage": 5,
+            "knockback": 10,
+            "growth": 8,
+            "angle": 130,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 6,
+        "hurtbubbles": [
+          20, 4, 4, 1,
+          16, 21, 5, 1,
+          8, 19, 9, 1,
+          1, 15, 13, 1,
+          10, 2, 4, 1,
+          15, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 11,
+        "hurtbubbles": [
+          20, 3, 4, 1,
+          10, 18, 5, 1,
+          4, 11, 9, 1,
+          0, 24, 13, 1,
+          21, 0, 4, 1,
+          13, 10, 5, 1
+        ]
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          18, -4, 4, 1,
+          13, 16, 5, 1,
+          0, 14, 9, 1,
+          2, 29, 13, 1,
+          5, -10, 4, 1,
+          6, 7, 5, 1
+        ]
+      }
+    ]
+  },
+  "uair": {
+    "cancellable": null,
+    "cancel": 10,
+    "early": 4,
+    "late": 5,
+    "iasa": 5,
+    "type": "aerial",
+    "keyframes": [
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          -4, -5, 4, 1,
+          3, 5, 5, 1,
+          -12, 4, 9, 1,
+          0, 17, 13, 1,
+          0, -9, 4, 1,
+          -2, 0, 5, 1
+        ],
+        "interpolate": true
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          -4, -5, 4, 1,
+          3, 5, 5, 1,
+          -12, 4, 9, 1,
+          0, 17, 13, 1,
+          0, -9, 4, 1,
+          -2, 0, 5, 1
+        ]
+      },
+      {
+        "duration": 1,
+        "audio": "shortwhiff",
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "flags": "stale_di",
+            "follow": "rleg",
+            "smear": true,
+            "x": 0,
+            "y": 5,
+            "radius": 16,
+            "damage": 8,
+            "knockback": 6,
+            "growth": 22,
+            "angle": 90,
+            "next": true
+          },
+          {
+            "type": "aerial",
+            "flags": "stale_di",
+            "smear": {
+              "x": -20,
+              "y": -5
+            },
+            "x": 20,
+            "y": -5,
+            "radius": 10,
+            "damage": 8,
+            "knockback": 6,
+            "growth": 22,
+            "angle": 90
+          }
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          2, 58, 4, 1,
+          4, 32, 5, 1,
+          -6, 31, 9, 1,
+          0, 30, 13, 1,
+          0, 57, 4, 1,
+          -2, 15, 5, 1
+        ]
+      },
+      {
+        "duration": 13,
+        "hurtbubbles": [
+          3, 52, 4, 1,
+          4, 18, 5, 1,
+          -6, 16, 9, 1,
+          0, 19, 13, 1,
+          0, 52, 4, 1,
+          -2, 2, 5, 1
+        ]
+      },
+      {
+        "duration": 15,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  },
+  "dair": {
+    "cancellable": null,
+    "cancel": 13,
+    "type": "aerial",
+    "early": 8,
+    "late": 7,
+    "iasa": 4,
+    "events": [
+      {
+        "effect": "glow",
+        "follow": "lleg",
+        "when": "hitbubbles"
+      },
+      {
+        "effect": "glow",
+        "follow": "rleg",
+        "when": "hitbubbles"
+      }
+    ],
+    "keyframes": [
+      {
+        "duration": 6,
+        "interpolate": true,
+        "hurtbubbles": [
+          -24, 51, 4, 1,
+          13, 19, 5, 1,
+          0, 13, 9, 1,
+          -7, 39, 13, 1,
+          -5, 59, 4, 1,
+          1, 25, 5, 1
+        ]
+      },
+      {
+        "duration": 2,
+        "hurtbubbles": [
+          -24, 51, 4, 1,
+          13, 19, 5, 1,
+          0, 13, 9, 1,
+          -7, 39, 13, 1,
+          -5, 59, 4, 1,
+          1, 25, 5, 1
+        ]
+      },
+      {
+        "duration": 3,
+        "hurtbubbles": [
+          10, -9, 4, 1,
+          10, 20, 5, 1,
+          -11, 19, 9, 1,
+          -6, 34, 13, 1,
+          6, -12, 4, 1,
+          5, 5, 5, 1
+        ],
+        "audio": "longwhiff",
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "x": 9,
+            "y": -5,
+            "radius": 19,
+            "damage": 10,
+            "knockback": 2,
+            "growth": 12,
+            "angle": 310,
+            "audio": "lowhit"
+          },
+          {
+            "type": "aerial",
+            "x": 0,
+            "y": 15,
+            "radius": 16,
+            "damage": 10,
+            "knockback": 2,
+            "growth": 12,
+            "angle": 310,
+            "audio": "lowhit"
+          }
+        ],
+        "tween": "quadIn"
+      },
+      {
+        "duration": 7,
+        "hurtbubbles": [
+          16, -11, 4, 1,
+          14, 10, 5, 1,
+          -1, 5, 9, 1,
+          -3, 27, 13, 1,
+          9, -16, 4, 1,
+          8, -1, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "x": 8,
+            "y": 0,
+            "radius": 16,
+            "damage": 7,
+            "knockback": 2,
+            "growth": 10,
+            "angle": 310
+          },
+          {
+            "type": "aerial",
+            "x": 0,
+            "y": 15,
+            "radius": 16,
+            "damage": 7,
+            "knockback": 2,
+            "growth": 10,
+            "angle": 310
+          }
+        ],
+        "tween": "quadOut"
+      },
+      {
+        "duration": 12,
+        "hurtbubbles": [
+          15, -6, 4, 1,
+          9, 18, 5, 1,
+          -9, 9, 9, 1,
+          -1, 25, 13, 1,
+          3, -13, 4, 1,
+          6, 5, 5, 1
+        ],
+        "hitbubbles": [
+          {
+            "type": "aerial",
+            "x": 5,
+            "y": 0,
+            "radius": 16,
+            "damage": 6,
+            "knockback": 2,
+            "growth": 8,
+            "angle": 310,
+            "audio": "highhit"
+          },
+          {
+            "type": "aerial",
+            "x": 0,
+            "y": 15,
+            "radius": 16,
+            "damage": 6,
+            "knockback": 2,
+            "growth": 8,
+            "angle": 310,
+            "audio": "highhit"
+          }
+        ]
+      },
+      {
+        "duration": 16,
+        "hurtbubbles": [
+          13, 3, 4, 1,
+          10, 21, 5, 1,
+          -9, 16, 9, 1,
+          2, 28, 13, 1,
+          2, -5, 4, 1,
+          3, 3, 5, 1
+        ]
+      },
+      {
+        "duration": 5,
+        "hurtbubbles": [
+          15, -7, 4, 1,
+          5, 15, 5, 1,
+          -8, 14, 9, 1,
+          2, 29, 13, 1,
+          -5, -15, 4, 1,
+          2, 3, 5, 1
+        ]
+      }
+    ]
+  }
+}
